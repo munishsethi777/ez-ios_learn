@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AppDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.window?.childViewControllers">
+            </PersistentString>
+            <PersistentString
+               value = "self.window?.rootViewController">
+            </PersistentString>
+            <PersistentString
+               value = "rootVC?.presentedViewController">
+            </PersistentString>
+            <PersistentString
+               value = "navController.visibleViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EventViewController.populateEvents(response:):EventViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MessageTableViewController.loadMessages(response:):MessageTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "messageJson[&quot;isRead&quot;] as! Int">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MessageChatController.tableViewScrollToBottomAnimated(animated:):MessageChatController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableArray.indexPathForLastMessage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "bottomView.layoutSublayers(of:):bottonView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "gradient.mask">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LearningPlanViewController.viewDidLoad():LearningPlanViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "lpTableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MyAchievements.tableView(_:numberOfRowsInSection:):MyAchievements.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.leaderBoardDataArr.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ModuleViewController.tableView(_:cellForRowAt:):ModuleViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "UpdateProfileViewController.updateProfileAction(_:):UpdateProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "view.subviews">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in MessageTableViewController.markAsRead(row:):MessageTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.getTopViewController():AppDelegate.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyAchievements.loadLeaderboard(response:):MyAchievements.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "leaderBoardDataArr.count">
+            </PersistentString>
+            <PersistentString
+               value = "leaderBoardTableView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TableArray.indexPathForMessage(message:):TableArray.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "IndexPath(row:row!, section:section!) as NSIndexPath">
+            </PersistentString>
+            <PersistentString
+               value = "IndexPath(row:row!, section:section!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MessageTableViewController.tableView(_:didSelectRowAt:):MessageTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DashboardViewController.populateDashboardCounts(response:):DashboardViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.pendingLpCount.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NotificationViewController.prepare(for:sender:):NotificationViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in TrainingViewController.tableView(_:cellForRowAt:):TrainingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DashboardViewController.handleNotificationData():DashboardViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tabBarController?.viewControllers">
+            </PersistentString>
+            <PersistentString
+               value = "messageTableViewController">
+            </PersistentString>
+            <PersistentString
+               value = "self.navigationController!.viewControllers.first">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PageItemController.executeSaveActivityCall():PageItemController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "moduleProgress">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.applicationWillEnterForeground(_:):AppDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(describing: root.self)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LaunchModuleViewController.applyMaxQuestionCondition():LaunchModuleViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CreateMessageTableViewController.getCompanyUsers():CreateMessageTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "UpdateProfileViewController.loadControls(json:):UpdateProfileViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TrainingViewController.loadLearningPlanAndModule(response:):TrainingViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TableArray.objectAtIndexPath(indexPath:):TableArray.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DashboardVC.handleNotificationData():DashboardVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "trainingTabController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TableArray.indexPathForMessage(message:):TableArray.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LaunchModuleViewController.createPageViewController(itemIndex:):LaunchModuleViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TrainingViewController.numberOfSections(in:):TrainingViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TrainingViewController.tableView(_:numberOfRowsInSection:):TrainingViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CreateMessageTableViewController.tableView(_:numberOfRowsInSection:):CreateMessageTableViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DashboardVC.launchChatroom(sender:):DashboardVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tabBarController?.viewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UpdateProfileViewController.updateProfileAction(_:):UpdateProfileViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate.application(_:didReceiveRemoteNotification:):AppDelegate.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

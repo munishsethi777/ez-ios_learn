@@ -1,0 +1,1974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FC75B130B1A7CE151FFBAB87D69675 /* SSCalendarAnnualHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F1F6D199D6F41301719E251633040F /* SSCalendarAnnualHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04F08B7FBA60581F7EB14DBBC3A6A8BE /* SSCalendarWeekHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C8146721D39D5159E73D807A77261A /* SSCalendarWeekHeaderView.m */; };
+		04F8AEB9DC474CC9F00BCEEF24458EC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B736A3ED9790601CD7E2CBCB8485496E /* Foundation.framework */; };
+		080D06ADD67EE72855A99DDAF0AC66DE /* SSCalendarEventsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5041B6A8B7782C5C4546D99B28E4B481 /* SSCalendarEventsCell.xib */; };
+		09666A6A6B02B460FC4A13AC9AE3ACCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B736A3ED9790601CD7E2CBCB8485496E /* Foundation.framework */; };
+		0C05D9982CB8548ED2547CFC65474FF4 /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF013B65B6698019FAADF98F964D9BF /* IndicatorInfo.swift */; };
+		0EC019576000641B37D8089B84F2EA63 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34E571F1BAEB9C08A9E9CDD8FAD7F8B2 /* XLPagerTabStrip.bundle */; };
+		0ED146A16B38CA7A54EF6D0B77CF8B74 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0EC1928FFA7C2F707878FDF784F00DCD /* de.lproj */; };
+		1037C9E873ACBD9CEB794D0CB90893DD /* SSCalendarEventsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0105647A0B81F2E077669563ECE88DE /* SSCalendarEventsCell.m */; };
+		12B7593587D5C530246828D77E41F2EB /* SSCalendarCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CCADC1A773EBCD48ACBADC2D0D4775 /* SSCalendarCache.m */; };
+		135ED1CCC7FD2DF1407EAB8E9301450D /* SSDayNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F445BFE11C260081AF7875028C7CF14D /* SSDayNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1391C1B0781F49D21DBEA3363FE24C75 /* SSCalendarDailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069D8BB9BE141B0E01AC75DBDF37B576 /* SSCalendarDailyViewController.m */; };
+		151ED65E476776F2EF186F43687116A8 /* SSCalendarDailyViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8DC4207F8A18B020B2DF8F7315BEFB8B /* SSCalendarDailyViewController.xib */; };
+		15255614115DB156030B1F6C6D366283 /* UIColor+StellarAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC9747A11EDC8C66E16E01E4CDFACA8 /* UIColor+StellarAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		156209D42012AC63DB15F8E794616891 /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E398C5A63D1CDEF0DB367AC5A17851 /* SegmentedPagerTabStripViewController.swift */; };
+		15979D61B8D9EFB59A3DAB366A771DC6 /* SSDimensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 461ECEE58B8E57322536BD42AA3F50C1 /* SSDimensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15CB62A59DDCFBCB89A243FFF52FF0D2 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 377CE7D7BFFF378A6B4E00DB80437469 /* fr.lproj */; };
+		16363C1FEF6F274B31EA3C6700DBE682 /* SSCalendarMonthlyHeaderView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 84C8728E2FDDEE7AB2C71F69957B35AA /* SSCalendarMonthlyHeaderView.xib */; };
+		1752C363EAE9AF466EC944E1EB4C3D8E /* SSMonthNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 071B99F4CE33E208F0359A3CA1E30DB7 /* SSMonthNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BA2403228E95080529D79C97F870D36 /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F7E243917C613BF5BA3AB8D358D23 /* ReachabilitySwift-dummy.m */; };
+		1DDF1AB18F56C275DC92BCB16C62D4D9 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8080C92487341AA461E9CE9AD2946DB1 /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DEF02C4F4727B53FFCDCD5810EDB9EB /* SSCalendarAnnualCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 77BC9E8D677A33EE61B26035F6B44BC9 /* SSCalendarAnnualCell.xib */; };
+		203C06980C2EB78E34641C5150A7EC10 /* SSCalendarCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1546CAFC45C2FC9F729BCE9D793FD1B5 /* SSCalendarCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		208D284A69C61E39A89492DF9E6C37AC /* CropViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C317A078B4A6B8C785D3F24F6D5DFFF /* CropViewController-dummy.m */; };
+		20932C0D07A3C9A65E70E2383DD160B7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE083A35A85F83EB0302E154B4CA8D0D /* Reachability.swift */; };
+		27FECA49D0A446D448329F6E696A107F /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1AC2A105778380400C7410758840D942 /* hu.lproj */; };
+		2B500298A623C5A0A527ECDBC1D702E5 /* SSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB066E1134FFE0571EB22B1CCB455CF /* SSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B75AC5237B2055720B9B6BBC0B2774E /* SSCalendarWeekLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F10AB743F5FD023121B4CB8F3B790C6 /* SSCalendarWeekLayout.m */; };
+		2CF5400E4E33EAB68AAC520DB8664F12 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DCC5E1EC9FD0478F58414AB7519E8EF1 /* vi.lproj */; };
+		2D22A268E5103140332712B904225644 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A429B1958A998F993F14DFE4583810B /* ButtonCell.xib */; };
+		2DF9CCF49DDBC5DED536527A3ED79BE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B736A3ED9790601CD7E2CBCB8485496E /* Foundation.framework */; };
+		2E11F5EC4A30E2916B30CFE3DD1BA085 /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6BB34F44216B6F7C9B7C019CE0759D64 /* ar.lproj */; };
+		2F737FFFD2683F1E1FCE73D45D63380B /* SSStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBD5C979D11B90004C3A12DC0522E07 /* SSStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FC4855EE9C23B73BBEE4C11423F8920 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D74E4672A2889A161FE0760CF55518C5 /* TOCropToolbar.m */; };
+		31D38D2D31A9D0ED15A5C7A39AD6F969 /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9460080C012F737FB475EF35F7A16 /* PagerTabStripBehaviour.swift */; };
+		35BB8A17B6A4EBA4DB02ACA4304C010B /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CF4FE5607283FD15987EF1AB2A5F47 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		374DDD6B36B8F49693DF35E5988F028A /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CE9BD61A73B56D2BD0B9E75C9A599212 /* zh-Hant.lproj */; };
+		39A9A609244FA649828F20E14FEF3E28 /* StellarConversionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F377237C9B40F98FE76ACCC79AF6F8A1 /* StellarConversionUtils.m */; };
+		39C620FCC35A180A45F259EBF2BF37BB /* SSCalendarMonthlyLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8A85756125B7DAF8D2170292E66C92 /* SSCalendarMonthlyLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C5972A574A95F6CC64CAEDA5DBE237A /* SSCalendarAnnualHeaderView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 355A1DEF1659DAA3FA9D01A6F57F4936 /* SSCalendarAnnualHeaderView.xib */; };
+		3CDA42F1535FC62BA52DCA5D58ACEAD7 /* SSCalendarWeekViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F22277F565A93B5D1613C117F288C1FA /* SSCalendarWeekViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DEEF4F77861C14FC89AA65B8D226BB8 /* SSDayNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 808A19B823C218B1E018948DAA1AA9A0 /* SSDayNode.m */; };
+		407E9911FF2D8F87BCAFBAC9EB1AEADF /* SSYearNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E53DDFB475326C173E18F66A31F459 /* SSYearNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40C4AB6FD92661ABEA9BA86F6EB04D5C /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3501F01025BCC87DFDE6F21BD2E8AD7D /* en.lproj */; };
+		456363E901E4E678375017518F22F5F1 /* SSCalendarEventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5ACA234D55EA18AA5BC35C1ACE80A0 /* SSCalendarEventTableViewCell.m */; };
+		46076A777BCB5548BC8D8D138195AE0A /* CropViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C902DBAA8134E5B72490CFD52997CD3 /* CropViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B0739321EB4EB4D9FB6D8C2CC133B0D /* SSStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = 0121B9CB8F0F7D1C4EC970B3FD207D1A /* SSStyles.m */; };
+		51FB6BE87EDDADA14BD7A380354AD19F /* StellarConversionUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A78EB16A3A2CF683E90C287A1EE0F593 /* StellarConversionUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5289FD2A62A91485F59FB22A07EA947D /* SSCalendarDailyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DC4207F8A18B020B2DF8F7315BEFB8B /* SSCalendarDailyViewController.xib */; };
+		533B30E41B18040D5FBB2F10BD9A507F /* SSCalendarMonthlyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 28594FA14E1C10F754E69E6155F63F50 /* SSCalendarMonthlyViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541DF2678503DEA907C2AECEC53DDAD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B736A3ED9790601CD7E2CBCB8485496E /* Foundation.framework */; };
+		544B146558BC502F4E07C0AED691895C /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BD0F1E494EFC1C8838BC696C0ACCCAC /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		558BA77737425B34EAAFF2A729AAA08D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B736A3ED9790601CD7E2CBCB8485496E /* Foundation.framework */; };
+		5690EA9A3F2C767E3CB862E6B4AB21E2 /* Pods-RightManagement-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC250D47491F462D12B4B5313F55C86 /* Pods-RightManagement-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		575979BE9585CB480963FBD3A129CF3B /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC033FAC7203B48BFDAEECA71D2600 /* TOCropOverlayView.m */; };
+		5804E13775691C799D172F9AAE7E5F79 /* SSCalendarCountCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C453DCB7F7FB8E89CCDF35034EDAAD9 /* SSCalendarCountCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C076D6F5F5A5E0CC295B3A498B833F1 /* SSCalendarAnnualViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2024BF01357E59303D4A4B55D6BBE557 /* SSCalendarAnnualViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DB2CA2B5B1866FE2AEA2E56EB9046A6 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8C86C55E586D4469FC319892F52D3 /* CropViewController.swift */; };
+		5FA41D322FB00ECFFF007045BDB4CDBB /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 77800038F65DC7FC57808B4905707CB0 /* ru.lproj */; };
+		6343978FF28CF2088F19F80F77AD7EF8 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AFE4124F719C0A7D0C20AC5BC95857 /* TOCropViewControllerTransitioning.m */; };
+		6392E5D38418F27C2D875638A345C840 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28CC6DE3BAA6EC9376BFEF6BC42606D /* BarPagerTabStripViewController.swift */; };
+		63C03DB1EF747F1A74725630AFEE8D62 /* SSCalendarDayLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 19CBD37EF547968CC5594C6CD47FFBD8 /* SSCalendarDayLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64065FE04CF82E9504FAA6E699A47710 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE7DB1B7A88F0092B943CBA08416C5 /* ButtonBarPagerTabStripViewController.swift */; };
+		65E107B3D57D3F1C8E8399AF42F9606C /* SSCalendarUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D5E79229D56EFF0C847D1C82841A9A /* SSCalendarUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6845EF4FFBD2CB9F1306A5BB10FB83BF /* SSCalendarMonthlyDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6739DC98715157E65726A87E2BCA248A /* SSCalendarMonthlyDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6847E692D3AEC69556F5DD99D031A05C /* SSConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 59873A487F1C4E545B524424F7A25A15 /* SSConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		699247C756CBD876A62617136EC91434 /* SSCalendarDailyViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 42E26BEBCCDC7D9DE90D1A49D8F52323 /* SSCalendarDailyViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CC31E9657FD54A87B2D905C37F0543B /* SSEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = F983FAD472B8E2A85DA1701CA2D87954 /* SSEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D6C7FDE8871B8F0929569A6EB616094 /* SSEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B257106603472D577FADD24ACE187E5F /* SSEvent.m */; };
+		6D705D7F477B40257C802F03CB0C8675 /* SSCalendarWeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D4FDF365384A1B53AC6787BFF9DFB9 /* SSCalendarWeekViewController.m */; };
+		6DF862121E051D37AC5CC5E410773374 /* SSCalendarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBD3E56768783A044AC2A8410CDF81C7 /* SSCalendarDayCell.xib */; };
+		6EA6D7F3EABF8EEFF59B3892E87EE57C /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A13A2CA53222D1EE42ADC8D8D847E8D /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F4471A44511330D6CED4F6A673218BE /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5691351A022F1934459980095D181 /* PagerTabStripError.swift */; };
+		6F596BE9FE0B26B44E526402A45FD7EF /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E4DFD4ADBCFCD40802E6E8C3A0266B76 /* tr.lproj */; };
+		6F702E1894D2D94ACA54A677997C495E /* SSCalendarWeekLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B58B13528CB24A7E3E34D542A86C8A6 /* SSCalendarWeekLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		739ADBD9B4C6A6CA17931B2099F20F30 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A9858031C203E11C26395108AD48BFC5 /* nl.lproj */; };
+		74A8FE21526A89FDC1BEE83BED1E167B /* SSCalendarAnnualViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6675C2A3CF856151C5DE5841B5B15BA1 /* SSCalendarAnnualViewController.xib */; };
+		753C7656BF3E81EE18CBDA3DFB13F359 /* SSCalendarMonthlyViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = C43A885CC3C33F017F58D7F8F4B9E7C8 /* SSCalendarMonthlyViewController.xib */; };
+		772B67171876DB701846B675A96B80C5 /* SSCalendarEventsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F7B9C04D9E04E570D99F96340DB59B2 /* SSCalendarEventsTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7865B3A5AD97F8A1E3518E36C20E422F /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AB88B030C0BCB61A62B1ED615059A /* TOCropViewController.m */; };
+		78C6AA5860DEB21DB36C2272E3EC03DF /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F1A53B4A3EDCAFD5F28B5DA3A9B37E2E /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78C7FB154D17161F71A954075A1ACCF9 /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC44C42570812822B152C04ABD746B50 /* PagerTabStripViewController.swift */; };
+		7C78CDE5769FBA24716D7049535B9C04 /* SSCalendarMonthlyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAE8490FC428341C4D51FF6D16206DE /* SSCalendarMonthlyDataSource.m */; };
+		7F5D7B32443D7117C68FE474EBCE6949 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C91FCC9E4A07BE36962E9938DE88EC5 /* BarView.swift */; };
+		80E757707E82C57F97A4544DC7C71074 /* SSCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A37E3202F389D89310BDA0D73F919784 /* SSCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8131DF1F3857C35EAB3483544B7ACE47 /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECECED6253289C6417A8E2D16DCB375 /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8232A27FBC57E7305DC396B3CB4D8407 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBD02C66531E74DF1A24C39694AFB763 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82954832972EBFFCB1326EA3E46DA163 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DD710BA5A4AB81A7F6F7536F4A18A3 /* SystemConfiguration.framework */; };
+		832EE08D4C177004A604334E682A3020 /* SSCalendarAnnualHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818ED8685797610C62B19C072756AF7 /* SSCalendarAnnualHeaderView.m */; };
+		84D41982C6B39887433514944F35ACAA /* SSCalendarDayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 904F7AEAB72D5BDC7F8BE6FC00F73CEE /* SSCalendarDayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8532B135A30AEE980A83FD3D6EE1D76F /* UIColor+StellarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E406814053670406B8D080797396D2 /* UIColor+StellarAdditions.m */; };
+		872F0E20EA221E7EDC3E2F050779EDDB /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60EB7CBCAC4EDDAEDEEC35237EB1651 /* SwipeDirection.swift */; };
+		882F8EE1DF88AAF5F71C2CE25224E8EF /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7AAE0175A15B1E67FF6C0D6A4915F /* ButtonBarView.swift */; };
+		898C05E3DE704A2A5BB11D93C0D7726E /* SSDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 583B3FEA6C1337D791037A3E7844474E /* SSDataController.m */; };
+		8A2592DAD914721C041FF00BE327BF0A /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20197588BE95E744213C5382936103A /* ButtonBarViewCell.swift */; };
+		96652B83C4871D53519E26E47F119FFE /* SSCalendarWeekHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = D979BA51B19042849A8E19CF233CBAD0 /* SSCalendarWeekHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A055B42DE1F1074946A6F9E1D5EE706 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DFF229E23A963A907B066C038266D971 /* es.lproj */; };
+		9E1211258F6AB8323084080B859BA04B /* CropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 854BD6F9851A2D1CDADE77FF8E056D6C /* CropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F984F832BC753E9E7921265DF32BEFC /* SSCalendarAnnualCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13613B9A3E7869C7266686097353C7FC /* SSCalendarAnnualCell.m */; };
+		A09AFCE7C050526FC0775227C115E783 /* SSCalendarAnnualLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0929C316FDD66D8F9CE7158A0C1D4E93 /* SSCalendarAnnualLayout.m */; };
+		A2943553516D66AAB249865026FD2A92 /* SSCalendarMonthlyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352DFA91533D89DEE098E4C66A2FFCB /* SSCalendarMonthlyLayout.m */; };
+		A3BF2E64E5F4955FB7EE4333F71960A7 /* SSYearNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C0747BEB211FD17CBC04F4791D6702 /* SSYearNode.m */; };
+		A4686145F31CBB8903607DCE98467709 /* SSDimensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DC2E74ABAD93B35868C8A43366AE6E /* SSDimensions.m */; };
+		A5A5ABA6388C976E7816AD51AC1A181A /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 327CBA9060C8AC50BA8C57C7FED2196C /* TOCropScrollView.m */; };
+		A704F471A2E296D11DCF21EBB25AFCF7 /* SSCalendarEventsCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 5041B6A8B7782C5C4546D99B28E4B481 /* SSCalendarEventsCell.xib */; };
+		AAF0D03122B364A55DC760BBD61DD819 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAE16AD7C2F08E94151857EF7C9FE36 /* TOActivityCroppedImageProvider.m */; };
+		AB1DE08085BB3F38FFE5F984378078EA /* SSCalendarAnnualLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C23EC2E40EC6A3814B15116661AD2945 /* SSCalendarAnnualLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB395E337D7B37B7DDA5F208B58F15AF /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC69D93CAC52D654BC9C97ECCB5FF7 /* UIImage+CropRotate.m */; };
+		ABD651A2CA07FFA37A0CD1503552DE2E /* SSCalendarMonthlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25157E58DD41100183F4305E1AAF68B4 /* SSCalendarMonthlyViewController.m */; };
+		ACA53E77686212E88DBEB61EA3C810F3 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C4E9C89A73C1D657FDB637C508A17044 /* pt.lproj */; };
+		AF9FE2888A7BF83B20A22C6D6183C2AC /* SSCalendarAnnualDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FD244B31577B6597B0B7E0DCA0BE59F9 /* SSCalendarAnnualDataSource.m */; };
+		B17B8F08D11E3CA3F7091B02198059A9 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DABF5DAF3CFEADDF385834EE967FA922 /* pl.lproj */; };
+		B3F9CDC317116F2D5EB7DB07E358641B /* SSCalendarEventsCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A28209CA0C19DC69774D284562041F57 /* SSCalendarEventsCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4E0D14C055E0E82F06A5676C3E0BA89 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50473D479E780C4861F8776FB524A540 /* FXPageControl.m */; };
+		B6650E9539E85FBF33E864A0EBCDB832 /* SSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 164116B5B4AE6F41ACECE68153D46D3B /* SSCalendar-dummy.m */; };
+		B941F6A714CCB988C48CA9BC7C57B325 /* SSCalendarAnnualDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 7308A67788A4D744F5DA4CB0CF6170B1 /* SSCalendarAnnualDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB461CACBD31A7CB258340E3D3F74845 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9276229C5049CBC3D950FD077970C882 /* XLPagerTabStrip-dummy.m */; };
+		BC335784EAFA100B5DF292A172FFD6F4 /* SSMonthNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 752074EE69C1D014FD0598F555C5DFA7 /* SSMonthNode.m */; };
+		BF2F03813D6AC60255EC000FE16F3E41 /* SSCalendarEventTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD5AD26DBF190BAB1F3EE6EB96CE103 /* SSCalendarEventTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFB8D97EEC12E421E68B5AC8E1C9988C /* SSCalendarDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72EE8A1E98B998D82426DAF2EE893FC /* SSCalendarDayViewController.m */; };
+		C3041203DC2E323A62D01F59E1732707 /* SSDataController.h in Headers */ = {isa = PBXBuildFile; fileRef = 669DD2258C8A142D300368BAAFDF5F07 /* SSDataController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4A17E37D86967468AF4D84012474FD1 /* SSCalendarMonthlyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C8728E2FDDEE7AB2C71F69957B35AA /* SSCalendarMonthlyHeaderView.xib */; };
+		C51B5E7E5F5869E3460A5A3AE7C8A4C2 /* SSCalendarAnnualViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6675C2A3CF856151C5DE5841B5B15BA1 /* SSCalendarAnnualViewController.xib */; };
+		C6F568EBB6BF37E605C36F002958505F /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F2D7B32FCE106960750EF0DF6F9DDFF3 /* ja.lproj */; };
+		C8A2EA5E6F0D1B2C10477A12E8AD3402 /* SSCalendarDayCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = BBD3E56768783A044AC2A8410CDF81C7 /* SSCalendarDayCell.xib */; };
+		C962EFEE168B125671F84D4729EE5325 /* SSCalendarAnnualViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EE25F1BA43BD416772E13A7D70F8C8 /* SSCalendarAnnualViewController.m */; };
+		CA97B071056C56E4BA9E78352C3AC909 /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2808185DE2CCB3DF335935E187BFC18A /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBB2F2A873BCCC1B9738CFE727D2A58B /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A02E80CA68E2157D883318B2DBCC49 /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCFD6590143643992AC50D1C1A96DE9E /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7CA5C1E53E90A009D924C16DC2AFE32B /* ms.lproj */; };
+		CF8907C1E99FBBF05F174078595B3F74 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB7C376D959784CA3CFE27243BECFC5 /* TOCroppedImageAttributes.m */; };
+		D01769302733264D4089D34FA635441E /* TOCropViewConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9400F8F9DAFA4A0CCBD59ED974711567 /* TOCropViewConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4EE599970EFF092BD1423B35618923C /* SSCalendarMonthlyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E33CD70ADD90E09292A646A6882AF7 /* SSCalendarMonthlyHeaderView.m */; };
+		D76F2D69F651F6DD22571D69ED06567B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64702E482254F0D3A0301E1ED0D97BF /* UIKit.framework */; };
+		D87172DF6F9E25124FAE4FB78C2D3037 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DD855B9172C1CA71B6CA34DAC74538 /* TOCropView.m */; };
+		D8BF4474699AF6E7B66483669C521D9D /* SSCalendarAnnualCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BB1135A6F16A95BE0990E5D0B310EA5D /* SSCalendarAnnualCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D998EBD05D6290474A55F4490056B4CA /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BE08A63513F43473885210A58AC19648 /* zh-Hans.lproj */; };
+		DBC8838E4F3A5272D8329B64E5CB7EB3 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 106590C423BD16E83DAC7D3A324F3D9D /* it.lproj */; };
+		DC498807FB5780EDCC348D7BA6A130FC /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C12901689A88F1C8D2F877AA5D6408F7 /* ro.lproj */; };
+		DD794E66F9274E174C445E67DEF20783 /* SSCalendarMonthlyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43A885CC3C33F017F58D7F8F4B9E7C8 /* SSCalendarMonthlyViewController.xib */; };
+		DDF746CCFA4F8AE189BD15BB662DBABC /* da-DK.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 08924358BE9F13F2DDDF9FD5F0013172 /* da-DK.lproj */; };
+		E5BBC9412AFB4164C1232B022DA320CD /* SSCalendarEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A48845B68DBCBEC79E8A250831D69C1D /* SSCalendarEventsTableViewController.m */; };
+		E5D5A23599CC9DB260724170A09C003C /* SSCalendarDayLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDBB7E61C2BC6C6F26209395CDE7B6D /* SSCalendarDayLayout.m */; };
+		E655F6DE0044826E097CEE4AFB955DC7 /* SSCalendar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E947A4333A018E4AA7B383D3C632B729 /* SSCalendar.bundle */; };
+		E6BFE93AC9E9CBC3871105C9F7F3BD25 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C7C24B9DB08B439962C0F3D9904DD574 /* ko.lproj */; };
+		E7C359DA2B5DA079C1B1F724B77A6304 /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDABD04CE9B41C161AC984B597CE84C /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E951ED21CEDBBF57B436E88A1FB502DA /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5A03F2712BD872F676B3BFC62B5FDBA0 /* id.lproj */; };
+		E9E2D9B365F6AD89D666FF3424327C36 /* Pods-RightManagement-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FD9E38D74B4A29BDC27B435B9CBBAC /* Pods-RightManagement-dummy.m */; };
+		EA5307F66EF7D47FEDE4B4F3C7FF57BD /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 1967170B6D16499EB5D8B150332CE5AC /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB9C5E9D33033FBF4EC0DBAD507FD92D /* SSCalendarCountCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DB26D011BBAB521DADEF98FB822ECFD2 /* SSCalendarCountCache.m */; };
+		ED6460FA7D8FEACCAC1AD5580D903BFB /* SSColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D63C0F375F643D36A7AAE0E2A383AE7 /* SSColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDF0C3D4D7C41B9193074F5442D5F30E /* SSCalendarMonthlyHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = CC7766FD053F9A299C742A152FBEAC29 /* SSCalendarMonthlyHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEA0547DC193D2E248A9EF9D80F7477F /* SSCalendarAnnualCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77BC9E8D677A33EE61B26035F6B44BC9 /* SSCalendarAnnualCell.xib */; };
+		EEF395DA82669C0FB56B30A874BF723F /* SSCalendarAnnualHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355A1DEF1659DAA3FA9D01A6F57F4936 /* SSCalendarAnnualHeaderView.xib */; };
+		EEFEF938C88CB3140DF857AF7C5BAA87 /* TOCropViewControllerBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEAAEC012FA780B8174B8CC0B7E6303A /* TOCropViewControllerBundle.bundle */; };
+		EF56C32447C00869D3C3F416BC4E1696 /* SSCalendarDayCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E3906BB7BAA33FC346C14125462FDA /* SSCalendarDayCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C631F6328808B8BEFF6CCC892D2124 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A78979DD20F53423F33C21F88E268F4 /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F409315F16A72ECD38E69257F5E84199 /* SSCalendarUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F3B7B67E98D055D4A2AE52212D3B6 /* SSCalendarUtils.m */; };
+		F534193E216B4D9B34EC8CF06556C68A /* SSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C58367ED1628063975E8A93DD9371DE /* SSCache.m */; };
+		F8820B6907DEF8AAD58141ACE4DD955F /* SSCalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EDBFF1117FF44020E7DCFC44894F /* SSCalendarDayCell.m */; };
+		FA6683BCBF40A9210A24A90403E47540 /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958B61EDC4EAC226B1D7BE0E1D6DE0E2 /* TwitterPagerTabStripViewController.swift */; };
+		FC76344D29FC0A353A894035E2C79131 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC71B2B4E074C22CE90CF363BEB610 /* BaseButtonBarPagerTabStripViewController.swift */; };
+		FF24424B3E1F7E4DF81E47DDC0DDB0C7 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DDE37056BE43F162D25D7CEAD7FD8CB8 /* Base.lproj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		188A28E79B042F5C9DB97C948D65E9CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 181981B726BB7BBB8A70D8D82FB87061;
+			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
+		};
+		1B73E1EEF3A4075CDE142AD81673B977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00396B4322591FABEE1F0002CD058D2;
+			remoteInfo = "SSCalendar-SSCalendar";
+		};
+		1DA6D1F91099BC7723A2F0D7B994700C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3319F23E2D445B8B019003D822884FD;
+			remoteInfo = XLPagerTabStrip;
+		};
+		47875DF6D877F734A33F541E26D2A66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C59B34511F05B57A3858C8B2A04A9D15;
+			remoteInfo = CropViewController;
+		};
+		4FE0FF97EBC7C44F62D934244A941C7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4A6B1D8D8E67A8D8F7BC561911E43A3;
+			remoteInfo = SSCalendar;
+		};
+		668B0C5A5DB88680BCCD47A4898EC73B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8DB81E2CA9E68019BB07E5FB2E02312;
+			remoteInfo = ReachabilitySwift;
+		};
+		D88E77966AE52F35E4B0CA1DB5D0361C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8690E9C865E9F085058559585223B97;
+			remoteInfo = "CropViewController-TOCropViewControllerBundle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0121B9CB8F0F7D1C4EC970B3FD207D1A /* SSStyles.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSStyles.m; path = SSCalendar/Classes/Base/SSStyles.m; sourceTree = "<group>"; };
+		02E53DDFB475326C173E18F66A31F459 /* SSYearNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSYearNode.h; path = SSCalendar/Classes/Models/SSYearNode.h; sourceTree = "<group>"; };
+		03E406814053670406B8D080797396D2 /* UIColor+StellarAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+StellarAdditions.m"; path = "SSCalendar/Classes/Base/UIColor+StellarAdditions.m"; sourceTree = "<group>"; };
+		069D8BB9BE141B0E01AC75DBDF37B576 /* SSCalendarDailyViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarDailyViewController.m; path = SSCalendar/Classes/Controllers/Day/ViewControllers/SSCalendarDailyViewController.m; sourceTree = "<group>"; };
+		071B99F4CE33E208F0359A3CA1E30DB7 /* SSMonthNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSMonthNode.h; path = SSCalendar/Classes/Models/SSMonthNode.h; sourceTree = "<group>"; };
+		08924358BE9F13F2DDDF9FD5F0013172 /* da-DK.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "da-DK.lproj"; path = "Objective-C/TOCropViewController/Resources/da-DK.lproj"; sourceTree = "<group>"; };
+		0929C316FDD66D8F9CE7158A0C1D4E93 /* SSCalendarAnnualLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarAnnualLayout.m; path = SSCalendar/Classes/Controllers/Year/Layouts/SSCalendarAnnualLayout.m; sourceTree = "<group>"; };
+		0A13A2CA53222D1EE42ADC8D8D847E8D /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.h"; sourceTree = "<group>"; };
+		0A429B1958A998F993F14DFE4583810B /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
+		0EC1928FFA7C2F707878FDF784F00DCD /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = "Objective-C/TOCropViewController/Resources/de.lproj"; sourceTree = "<group>"; };
+		0F7B9C04D9E04E570D99F96340DB59B2 /* SSCalendarEventsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarEventsTableViewController.h; path = SSCalendar/Classes/Controllers/Day/Controllers/SSCalendarEventsTableViewController.h; sourceTree = "<group>"; };
+		106590C423BD16E83DAC7D3A324F3D9D /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = "Objective-C/TOCropViewController/Resources/it.lproj"; sourceTree = "<group>"; };
+		114D13C18B8BE46B5CBE5257CAC2603D /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		13613B9A3E7869C7266686097353C7FC /* SSCalendarAnnualCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarAnnualCell.m; path = SSCalendar/Classes/Controllers/Year/Cells/SSCalendarAnnualCell.m; sourceTree = "<group>"; };
+		14B84866B343AD66E7B57F0D7FE917ED /* SSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		1546CAFC45C2FC9F729BCE9D793FD1B5 /* SSCalendarCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarCache.h; path = SSCalendar/Classes/Models/SSCalendarCache.h; sourceTree = "<group>"; };
+		164116B5B4AE6F41ACECE68153D46D3B /* SSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSCalendar-dummy.m"; sourceTree = "<group>"; };
+		194A0A1074933D0CFB9850AAC43B38C8 /* SSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSCalendar.modulemap; sourceTree = "<group>"; };
+		1967170B6D16499EB5D8B150332CE5AC /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.h"; sourceTree = "<group>"; };
+		19CBD37EF547968CC5594C6CD47FFBD8 /* SSCalendarDayLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarDayLayout.h; path = SSCalendar/Classes/Controllers/Day/Layouts/SSCalendarDayLayout.h; sourceTree = "<group>"; };
+		1AC2A105778380400C7410758840D942 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = hu.lproj; path = "Objective-C/TOCropViewController/Resources/hu.lproj"; sourceTree = "<group>"; };
+		1C91FCC9E4A07BE36962E9938DE88EC5 /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
+		1DAE8490FC428341C4D51FF6D16206DE /* SSCalendarMonthlyDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarMonthlyDataSource.m; path = SSCalendar/Classes/Controllers/Month/Controllers/SSCalendarMonthlyDataSource.m; sourceTree = "<group>"; };
+		1EDBB7E61C2BC6C6F26209395CDE7B6D /* SSCalendarDayLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarDayLayout.m; path = SSCalendar/Classes/Controllers/Day/Layouts/SSCalendarDayLayout.m; sourceTree = "<group>"; };
+		1FDABD04CE9B41C161AC984B597CE84C /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
+		2024BF01357E59303D4A4B55D6BBE557 /* SSCalendarAnnualViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarAnnualViewController.h; path = SSCalendar/Classes/Controllers/Year/ViewControllers/SSCalendarAnnualViewController.h; sourceTree = "<group>"; };
+		21DD710BA5A4AB81A7F6F7536F4A18A3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		25157E58DD41100183F4305E1AAF68B4 /* SSCalendarMonthlyViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarMonthlyViewController.m; path = SSCalendar/Classes/Controllers/Month/ViewControllers/SSCalendarMonthlyViewController.m; sourceTree = "<group>"; };
+		27E69BBDFD3838F21356650A5F99794B /* XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		27F4176F4600958755B3935274D71544 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
+		2808185DE2CCB3DF335935E187BFC18A /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = "Objective-C/TOCropViewController/Views/TOCropView.h"; sourceTree = "<group>"; };
+		28594FA14E1C10F754E69E6155F63F50 /* SSCalendarMonthlyViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarMonthlyViewController.h; path = SSCalendar/Classes/Controllers/Month/ViewControllers/SSCalendarMonthlyViewController.h; sourceTree = "<group>"; };
+		2B8A85756125B7DAF8D2170292E66C92 /* SSCalendarMonthlyLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarMonthlyLayout.h; path = SSCalendar/Classes/Controllers/Month/Layouts/SSCalendarMonthlyLayout.h; sourceTree = "<group>"; };
+		2D63C0F375F643D36A7AAE0E2A383AE7 /* SSColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSColors.h; path = SSCalendar/Classes/Base/SSColors.h; sourceTree = "<group>"; };
+		30E9F4C26F29AE381A04241C9DAAB784 /* CropViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CropViewController.modulemap; sourceTree = "<group>"; };
+		327CBA9060C8AC50BA8C57C7FED2196C /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.m"; sourceTree = "<group>"; };
+		32CCADC1A773EBCD48ACBADC2D0D4775 /* SSCalendarCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarCache.m; path = SSCalendar/Classes/Models/SSCalendarCache.m; sourceTree = "<group>"; };
+		34132EF7A57B9A91C7787F57D9EFC869 /* ReachabilitySwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReachabilitySwift-Info.plist"; sourceTree = "<group>"; };
+		34E571F1BAEB9C08A9E9CDD8FAD7F8B2 /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLPagerTabStrip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3501F01025BCC87DFDE6F21BD2E8AD7D /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = "Objective-C/TOCropViewController/Resources/en.lproj"; sourceTree = "<group>"; };
+		355A1DEF1659DAA3FA9D01A6F57F4936 /* SSCalendarAnnualHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SSCalendarAnnualHeaderView.xib; path = SSCalendar/Classes/Controllers/Year/Views/SSCalendarAnnualHeaderView.xib; sourceTree = "<group>"; };
+		377CE7D7BFFF378A6B4E00DB80437469 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = "Objective-C/TOCropViewController/Resources/fr.lproj"; sourceTree = "<group>"; };
+		37CF4FE5607283FD15987EF1AB2A5F47 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.h"; sourceTree = "<group>"; };
+		37F1F6D199D6F41301719E251633040F /* SSCalendarAnnualHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarAnnualHeaderView.h; path = SSCalendar/Classes/Controllers/Year/Views/SSCalendarAnnualHeaderView.h; sourceTree = "<group>"; };
+		3818ED8685797610C62B19C072756AF7 /* SSCalendarAnnualHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarAnnualHeaderView.m; path = SSCalendar/Classes/Controllers/Year/Views/SSCalendarAnnualHeaderView.m; sourceTree = "<group>"; };
+		39AFE4124F719C0A7D0C20AC5BC95857 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.m"; sourceTree = "<group>"; };
+		3E615411204691932767815DA8EA597C /* ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		3E7AB88B030C0BCB61A62B1ED615059A /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = "Objective-C/TOCropViewController/TOCropViewController.m"; sourceTree = "<group>"; };
+		3F70079AB33818C729DDB577F5C01C2C /* Pods_RightManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RightManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDC033FAC7203B48BFDAEECA71D2600 /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.m"; sourceTree = "<group>"; };
+		42E26BEBCCDC7D9DE90D1A49D8F52323 /* SSCalendarDailyViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarDailyViewController.h; path = SSCalendar/Classes/Controllers/Day/ViewControllers/SSCalendarDailyViewController.h; sourceTree = "<group>"; };
+		4352DFA91533D89DEE098E4C66A2FFCB /* SSCalendarMonthlyLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarMonthlyLayout.m; path = SSCalendar/Classes/Controllers/Month/Layouts/SSCalendarMonthlyLayout.m; sourceTree = "<group>"; };
+		43D4FDF365384A1B53AC6787BFF9DFB9 /* SSCalendarWeekViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarWeekViewController.m; path = SSCalendar/Classes/Controllers/Day/Controllers/SSCalendarWeekViewController.m; sourceTree = "<group>"; };
+		461ECEE58B8E57322536BD42AA3F50C1 /* SSDimensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSDimensions.h; path = SSCalendar/Classes/Base/SSDimensions.h; sourceTree = "<group>"; };
+		49A02E80CA68E2157D883318B2DBCC49 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
+		4C902DBAA8134E5B72490CFD52997CD3 /* CropViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CropViewController-umbrella.h"; sourceTree = "<group>"; };
+		4D0F7E243917C613BF5BA3AB8D358D23 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		4DF013B65B6698019FAADF98F964D9BF /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
+		4EC250D47491F462D12B4B5313F55C86 /* Pods-RightManagement-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RightManagement-umbrella.h"; sourceTree = "<group>"; };
+		5041B6A8B7782C5C4546D99B28E4B481 /* SSCalendarEventsCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SSCalendarEventsCell.xib; path = SSCalendar/Classes/Controllers/Day/Cells/SSCalendarEventsCell.xib; sourceTree = "<group>"; };
+		50473D479E780C4861F8776FB524A540 /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
+		50D1EDBFF1117FF44020E7DCFC44894F /* SSCalendarDayCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarDayCell.m; path = "SSCalendar/Classes/Collection View Cells/SSCalendarDayCell.m"; sourceTree = "<group>"; };
+		57A7AAE0175A15B1E67FF6C0D6A4915F /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
+		583B3FEA6C1337D791037A3E7844474E /* SSDataController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSDataController.m; path = SSCalendar/Classes/Base/SSDataController.m; sourceTree = "<group>"; };
+		59873A487F1C4E545B524424F7A25A15 /* SSConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSConstants.h; path = SSCalendar/Classes/Base/SSConstants.h; sourceTree = "<group>"; };
+		5A03F2712BD872F676B3BFC62B5FDBA0 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = id.lproj; path = "Objective-C/TOCropViewController/Resources/id.lproj"; sourceTree = "<group>"; };
+		5DAF04A9B3C4B97AA94ABCE89884BEE2 /* CropViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CropViewController.xcconfig; sourceTree = "<group>"; };
+		5E51562FFEB3B1F18AC5BB014335EC6E /* Pods-RightManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RightManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		5F16CC8A48951739F67E7E6B72F4CE00 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
+		60A9E548CF41136B940EB6F40E23115C /* CropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CropViewController-Info.plist"; sourceTree = "<group>"; };
+		63E398C5A63D1CDEF0DB367AC5A17851 /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		6508E7F5E232785B8B6B55F9BF7C519B /* ReachabilitySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6675C2A3CF856151C5DE5841B5B15BA1 /* SSCalendarAnnualViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SSCalendarAnnualViewController.xib; path = SSCalendar/Classes/Controllers/Year/ViewControllers/SSCalendarAnnualViewController.xib; sourceTree = "<group>"; };
+		669DD2258C8A142D300368BAAFDF5F07 /* SSDataController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSDataController.h; path = SSCalendar/Classes/Base/SSDataController.h; sourceTree = "<group>"; };
+		6739DC98715157E65726A87E2BCA248A /* SSCalendarMonthlyDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarMonthlyDataSource.h; path = SSCalendar/Classes/Controllers/Month/Controllers/SSCalendarMonthlyDataSource.h; sourceTree = "<group>"; };
+		69C8C86C55E586D4469FC319892F52D3 /* CropViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropViewController.swift; path = Swift/CropViewController/CropViewController.swift; sourceTree = "<group>"; };
+		69DD855B9172C1CA71B6CA34DAC74538 /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = "Objective-C/TOCropViewController/Views/TOCropView.m"; sourceTree = "<group>"; };
+		6BB34F44216B6F7C9B7C019CE0759D64 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ar.lproj; path = "Objective-C/TOCropViewController/Resources/ar.lproj"; sourceTree = "<group>"; };
+		7308A67788A4D744F5DA4CB0CF6170B1 /* SSCalendarAnnualDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarAnnualDataSource.h; path = SSCalendar/Classes/Controllers/Year/Controllers/SSCalendarAnnualDataSource.h; sourceTree = "<group>"; };
+		752074EE69C1D014FD0598F555C5DFA7 /* SSMonthNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSMonthNode.m; path = SSCalendar/Classes/Models/SSMonthNode.m; sourceTree = "<group>"; };
+		77800038F65DC7FC57808B4905707CB0 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = "Objective-C/TOCropViewController/Resources/ru.lproj"; sourceTree = "<group>"; };
+		77BC9E8D677A33EE61B26035F6B44BC9 /* SSCalendarAnnualCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SSCalendarAnnualCell.xib; path = SSCalendar/Classes/Controllers/Year/Cells/SSCalendarAnnualCell.xib; sourceTree = "<group>"; };
+		7C2A25FB2A16E44BF977F6E0261DF067 /* Pods-RightManagement-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RightManagement-frameworks.sh"; sourceTree = "<group>"; };
+		7C2F3B7B67E98D055D4A2AE52212D3B6 /* SSCalendarUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarUtils.m; path = SSCalendar/Classes/Base/SSCalendarUtils.m; sourceTree = "<group>"; };
+		7C317A078B4A6B8C785D3F24F6D5DFFF /* CropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CropViewController-dummy.m"; sourceTree = "<group>"; };
+		7C453DCB7F7FB8E89CCDF35034EDAAD9 /* SSCalendarCountCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarCountCache.h; path = SSCalendar/Classes/Models/SSCalendarCountCache.h; sourceTree = "<group>"; };
+		7C604E402D41C0D6D9597ECDB2B514A0 /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
+		7CA5C1E53E90A009D924C16DC2AFE32B /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ms.lproj; path = "Objective-C/TOCropViewController/Resources/ms.lproj"; sourceTree = "<group>"; };
+		8080C92487341AA461E9CE9AD2946DB1 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		808A19B823C218B1E018948DAA1AA9A0 /* SSDayNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSDayNode.m; path = SSCalendar/Classes/Models/SSDayNode.m; sourceTree = "<group>"; };
+		84C8728E2FDDEE7AB2C71F69957B35AA /* SSCalendarMonthlyHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SSCalendarMonthlyHeaderView.xib; path = SSCalendar/Classes/Controllers/Month/Views/SSCalendarMonthlyHeaderView.xib; sourceTree = "<group>"; };
+		854BD6F9851A2D1CDADE77FF8E056D6C /* CropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CropViewController.h; path = Swift/CropViewController/CropViewController.h; sourceTree = "<group>"; };
+		8ADC69D93CAC52D654BC9C97ECCB5FF7 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		8B58B13528CB24A7E3E34D542A86C8A6 /* SSCalendarWeekLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarWeekLayout.h; path = SSCalendar/Classes/Controllers/Day/Layouts/SSCalendarWeekLayout.h; sourceTree = "<group>"; };
+		8C58367ED1628063975E8A93DD9371DE /* SSCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCache.m; path = SSCalendar/Classes/Models/SSCache.m; sourceTree = "<group>"; };
+		8DC4207F8A18B020B2DF8F7315BEFB8B /* SSCalendarDailyViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SSCalendarDailyViewController.xib; path = SSCalendar/Classes/Controllers/Day/ViewControllers/SSCalendarDailyViewController.xib; sourceTree = "<group>"; };
+		8EB57BC6668D73D0819A4BD18B496F0C /* Pods-RightManagement.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RightManagement.modulemap"; sourceTree = "<group>"; };
+		8EBD5C979D11B90004C3A12DC0522E07 /* SSStyles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSStyles.h; path = SSCalendar/Classes/Base/SSStyles.h; sourceTree = "<group>"; };
+		8F10AB743F5FD023121B4CB8F3B790C6 /* SSCalendarWeekLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarWeekLayout.m; path = SSCalendar/Classes/Controllers/Day/Layouts/SSCalendarWeekLayout.m; sourceTree = "<group>"; };
+		8F73C6C86E667A5FBA94E21AFD75D423 /* SSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		904F7AEAB72D5BDC7F8BE6FC00F73CEE /* SSCalendarDayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarDayViewController.h; path = SSCalendar/Classes/Controllers/Day/Controllers/SSCalendarDayViewController.h; sourceTree = "<group>"; };
+		9276229C5049CBC3D950FD077970C882 /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
+		9400F8F9DAFA4A0CCBD59ED974711567 /* TOCropViewConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewConstants.h; path = "Objective-C/TOCropViewController/Constants/TOCropViewConstants.h"; sourceTree = "<group>"; };
+		94DC2E74ABAD93B35868C8A43366AE6E /* SSDimensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSDimensions.m; path = SSCalendar/Classes/Base/SSDimensions.m; sourceTree = "<group>"; };
+		958B61EDC4EAC226B1D7BE0E1D6DE0E2 /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		97FD9E38D74B4A29BDC27B435B9CBBAC /* Pods-RightManagement-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RightManagement-dummy.m"; sourceTree = "<group>"; };
+		99B0139F7FB274B982309C20D52CCE2A /* ResourceBundle-SSCalendar-SSCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SSCalendar-SSCalendar-Info.plist"; sourceTree = "<group>"; };
+		9A78979DD20F53423F33C21F88E268F4 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.h"; sourceTree = "<group>"; };
+		9BD0F1E494EFC1C8838BC696C0ACCCAC /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ECECED6253289C6417A8E2D16DCB375 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.h"; sourceTree = "<group>"; };
+		A28209CA0C19DC69774D284562041F57 /* SSCalendarEventsCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarEventsCell.h; path = SSCalendar/Classes/Controllers/Day/Cells/SSCalendarEventsCell.h; sourceTree = "<group>"; };
+		A37E3202F389D89310BDA0D73F919784 /* SSCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCache.h; path = SSCalendar/Classes/Models/SSCache.h; sourceTree = "<group>"; };
+		A48845B68DBCBEC79E8A250831D69C1D /* SSCalendarEventsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarEventsTableViewController.m; path = SSCalendar/Classes/Controllers/Day/Controllers/SSCalendarEventsTableViewController.m; sourceTree = "<group>"; };
+		A60EB7CBCAC4EDDAEDEEC35237EB1651 /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
+		A78EB16A3A2CF683E90C287A1EE0F593 /* StellarConversionUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StellarConversionUtils.h; path = SSCalendar/Classes/Base/StellarConversionUtils.h; sourceTree = "<group>"; };
+		A9858031C203E11C26395108AD48BFC5 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = "Objective-C/TOCropViewController/Resources/nl.lproj"; sourceTree = "<group>"; };
+		AAC9747A11EDC8C66E16E01E4CDFACA8 /* UIColor+StellarAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+StellarAdditions.h"; path = "SSCalendar/Classes/Base/UIColor+StellarAdditions.h"; sourceTree = "<group>"; };
+		B0105647A0B81F2E077669563ECE88DE /* SSCalendarEventsCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarEventsCell.m; path = SSCalendar/Classes/Controllers/Day/Cells/SSCalendarEventsCell.m; sourceTree = "<group>"; };
+		B17FF2F98CDC61A3D35B1C469CE9C1D0 /* SSCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSCalendar-Info.plist"; sourceTree = "<group>"; };
+		B257106603472D577FADD24ACE187E5F /* SSEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSEvent.m; path = SSCalendar/Classes/Models/SSEvent.m; sourceTree = "<group>"; };
+		B6E33CD70ADD90E09292A646A6882AF7 /* SSCalendarMonthlyHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarMonthlyHeaderView.m; path = SSCalendar/Classes/Controllers/Month/Views/SSCalendarMonthlyHeaderView.m; sourceTree = "<group>"; };
+		B6EE25F1BA43BD416772E13A7D70F8C8 /* SSCalendarAnnualViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarAnnualViewController.m; path = SSCalendar/Classes/Controllers/Year/ViewControllers/SSCalendarAnnualViewController.m; sourceTree = "<group>"; };
+		B736A3ED9790601CD7E2CBCB8485496E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BB1135A6F16A95BE0990E5D0B310EA5D /* SSCalendarAnnualCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarAnnualCell.h; path = SSCalendar/Classes/Controllers/Year/Cells/SSCalendarAnnualCell.h; sourceTree = "<group>"; };
+		BBD02C66531E74DF1A24C39694AFB763 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		BBD3E56768783A044AC2A8410CDF81C7 /* SSCalendarDayCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SSCalendarDayCell.xib; path = "SSCalendar/Classes/Collection View Cells/SSCalendarDayCell.xib"; sourceTree = "<group>"; };
+		BDB066E1134FFE0571EB22B1CCB455CF /* SSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		BDFB8D4F6D8EE470382FBA422B37C708 /* Pods-RightManagement-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RightManagement-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE08A63513F43473885210A58AC19648 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		C12901689A88F1C8D2F877AA5D6408F7 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ro.lproj; path = "Objective-C/TOCropViewController/Resources/ro.lproj"; sourceTree = "<group>"; };
+		C23EC2E40EC6A3814B15116661AD2945 /* SSCalendarAnnualLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarAnnualLayout.h; path = SSCalendar/Classes/Controllers/Year/Layouts/SSCalendarAnnualLayout.h; sourceTree = "<group>"; };
+		C43A885CC3C33F017F58D7F8F4B9E7C8 /* SSCalendarMonthlyViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SSCalendarMonthlyViewController.xib; path = SSCalendar/Classes/Controllers/Month/ViewControllers/SSCalendarMonthlyViewController.xib; sourceTree = "<group>"; };
+		C4E9C89A73C1D657FDB637C508A17044 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = "Objective-C/TOCropViewController/Resources/pt.lproj"; sourceTree = "<group>"; };
+		C5C0747BEB211FD17CBC04F4791D6702 /* SSYearNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSYearNode.m; path = SSCalendar/Classes/Models/SSYearNode.m; sourceTree = "<group>"; };
+		C5EF017E7246A8509854DBD969CC68C8 /* ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist"; sourceTree = "<group>"; };
+		C7C24B9DB08B439962C0F3D9904DD574 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = "Objective-C/TOCropViewController/Resources/ko.lproj"; sourceTree = "<group>"; };
+		C7F5691351A022F1934459980095D181 /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
+		C9E3906BB7BAA33FC346C14125462FDA /* SSCalendarDayCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarDayCell.h; path = "SSCalendar/Classes/Collection View Cells/SSCalendarDayCell.h"; sourceTree = "<group>"; };
+		CC44C42570812822B152C04ABD746B50 /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
+		CC7766FD053F9A299C742A152FBEAC29 /* SSCalendarMonthlyHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarMonthlyHeaderView.h; path = SSCalendar/Classes/Controllers/Month/Views/SSCalendarMonthlyHeaderView.h; sourceTree = "<group>"; };
+		CDC9460080C012F737FB475EF35F7A16 /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
+		CE05CEDE37BE18AF765B1B81018146A6 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE083A35A85F83EB0302E154B4CA8D0D /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Reachability/Reachability.swift; sourceTree = "<group>"; };
+		CE9BD61A73B56D2BD0B9E75C9A599212 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hant.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		CEAAEC012FA780B8174B8CC0B7E6303A /* TOCropViewControllerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOCropViewControllerBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAE16AD7C2F08E94151857EF7C9FE36 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.m"; sourceTree = "<group>"; };
+		CFC258015B0019BC3178D2D0DAD71E3F /* Pods-RightManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RightManagement.release.xcconfig"; sourceTree = "<group>"; };
+		D4D5E79229D56EFF0C847D1C82841A9A /* SSCalendarUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarUtils.h; path = SSCalendar/Classes/Base/SSCalendarUtils.h; sourceTree = "<group>"; };
+		D549F8CBC4DE510148DDA20CDC953762 /* Pods-RightManagement-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RightManagement-Info.plist"; sourceTree = "<group>"; };
+		D72EE8A1E98B998D82426DAF2EE893FC /* SSCalendarDayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarDayViewController.m; path = SSCalendar/Classes/Controllers/Day/Controllers/SSCalendarDayViewController.m; sourceTree = "<group>"; };
+		D74E4672A2889A161FE0760CF55518C5 /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.m"; sourceTree = "<group>"; };
+		D979BA51B19042849A8E19CF233CBAD0 /* SSCalendarWeekHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarWeekHeaderView.h; path = SSCalendar/Classes/Controllers/Day/Controllers/SSCalendarWeekHeaderView.h; sourceTree = "<group>"; };
+		DABF5DAF3CFEADDF385834EE967FA922 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = "Objective-C/TOCropViewController/Resources/pl.lproj"; sourceTree = "<group>"; };
+		DB26D011BBAB521DADEF98FB822ECFD2 /* SSCalendarCountCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarCountCache.m; path = SSCalendar/Classes/Models/SSCalendarCountCache.m; sourceTree = "<group>"; };
+		DCC5E1EC9FD0478F58414AB7519E8EF1 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = vi.lproj; path = "Objective-C/TOCropViewController/Resources/vi.lproj"; sourceTree = "<group>"; };
+		DCF876423F97BC372631EC5034ECB92F /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
+		DCFE7DB1B7A88F0092B943CBA08416C5 /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		DDE37056BE43F162D25D7CEAD7FD8CB8 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Base.lproj; path = "Objective-C/TOCropViewController/Resources/Base.lproj"; sourceTree = "<group>"; };
+		DFF229E23A963A907B066C038266D971 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = "Objective-C/TOCropViewController/Resources/es.lproj"; sourceTree = "<group>"; };
+		E181AD34A81D2544CD6CF949CEABDD7B /* CropViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CropViewController-prefix.pch"; sourceTree = "<group>"; };
+		E20197588BE95E744213C5382936103A /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
+		E28CC6DE3BAA6EC9376BFEF6BC42606D /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		E393CBA392ACAFF5027A5B907014C61C /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		E3C8146721D39D5159E73D807A77261A /* SSCalendarWeekHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarWeekHeaderView.m; path = SSCalendar/Classes/Controllers/Day/Controllers/SSCalendarWeekHeaderView.m; sourceTree = "<group>"; };
+		E4DFD4ADBCFCD40802E6E8C3A0266B76 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = tr.lproj; path = "Objective-C/TOCropViewController/Resources/tr.lproj"; sourceTree = "<group>"; };
+		E64702E482254F0D3A0301E1ED0D97BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E734F769A88AAC3B5BFB6507A7A8DC9F /* SSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSCalendar.xcconfig; sourceTree = "<group>"; };
+		E919B61B8520761C147C647D1597FDD6 /* CropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E947A4333A018E4AA7B383D3C632B729 /* SSCalendar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSCalendar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD5AD26DBF190BAB1F3EE6EB96CE103 /* SSCalendarEventTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarEventTableViewCell.h; path = SSCalendar/Classes/Controllers/Day/Cells/SSCalendarEventTableViewCell.h; sourceTree = "<group>"; };
+		F1A53B4A3EDCAFD5F28B5DA3A9B37E2E /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = "Objective-C/TOCropViewController/TOCropViewController.h"; sourceTree = "<group>"; };
+		F22277F565A93B5D1613C117F288C1FA /* SSCalendarWeekViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSCalendarWeekViewController.h; path = SSCalendar/Classes/Controllers/Day/Controllers/SSCalendarWeekViewController.h; sourceTree = "<group>"; };
+		F2D7B32FCE106960750EF0DF6F9DDFF3 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = "Objective-C/TOCropViewController/Resources/ja.lproj"; sourceTree = "<group>"; };
+		F377237C9B40F98FE76ACCC79AF6F8A1 /* StellarConversionUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StellarConversionUtils.m; path = SSCalendar/Classes/Base/StellarConversionUtils.m; sourceTree = "<group>"; };
+		F42A436C2EA52B0452320131CC7B5AB1 /* Pods-RightManagement-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RightManagement-acknowledgements.plist"; sourceTree = "<group>"; };
+		F445BFE11C260081AF7875028C7CF14D /* SSDayNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSDayNode.h; path = SSCalendar/Classes/Models/SSDayNode.h; sourceTree = "<group>"; };
+		F983FAD472B8E2A85DA1701CA2D87954 /* SSEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSEvent.h; path = SSCalendar/Classes/Models/SSEvent.h; sourceTree = "<group>"; };
+		F9DC71B2B4E074C22CE90CF363BEB610 /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		FB5ACA234D55EA18AA5BC35C1ACE80A0 /* SSCalendarEventTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarEventTableViewCell.m; path = SSCalendar/Classes/Controllers/Day/Cells/SSCalendarEventTableViewCell.m; sourceTree = "<group>"; };
+		FD244B31577B6597B0B7E0DCA0BE59F9 /* SSCalendarAnnualDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSCalendarAnnualDataSource.m; path = SSCalendar/Classes/Controllers/Year/Controllers/SSCalendarAnnualDataSource.m; sourceTree = "<group>"; };
+		FFB7C376D959784CA3CFE27243BECFC5 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35DEA42CB1C3A29E88DB4EA699C5A8AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DF9CCF49DDBC5DED536527A3ED79BE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C9B6E2963A78CD8AD0874C93E58CF56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09666A6A6B02B460FC4A13AC9AE3ACCF /* Foundation.framework in Frameworks */,
+				82954832972EBFFCB1326EA3E46DA163 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC904EE57E618F97026D50ACAB57A18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541DF2678503DEA907C2AECEC53DDAD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3369E6594F5A2D0379A3ADEC62CC10B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F8AEB9DC474CC9F00BCEEF24458EC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8BF395C11331F8E6190251FF35F858B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D281EB5D7B3BD76DEFB5B6ED1E6705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7EEA021A59EBE061EED04FD87FF7AE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558BA77737425B34EAAFF2A729AAA08D /* Foundation.framework in Frameworks */,
+				D76F2D69F651F6DD22571D69ED06567B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE2317740F7BC517A5777EFD91AE99A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B89D126C0295C6023BB3B66E05457D8A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0ECB9721A362E97929BEE6B02C6CFC0C /* XLPagerTabStrip */ = {
+			isa = PBXGroup;
+			children = (
+				E28CC6DE3BAA6EC9376BFEF6BC42606D /* BarPagerTabStripViewController.swift */,
+				1C91FCC9E4A07BE36962E9938DE88EC5 /* BarView.swift */,
+				F9DC71B2B4E074C22CE90CF363BEB610 /* BaseButtonBarPagerTabStripViewController.swift */,
+				DCFE7DB1B7A88F0092B943CBA08416C5 /* ButtonBarPagerTabStripViewController.swift */,
+				57A7AAE0175A15B1E67FF6C0D6A4915F /* ButtonBarView.swift */,
+				E20197588BE95E744213C5382936103A /* ButtonBarViewCell.swift */,
+				1FDABD04CE9B41C161AC984B597CE84C /* FXPageControl.h */,
+				50473D479E780C4861F8776FB524A540 /* FXPageControl.m */,
+				4DF013B65B6698019FAADF98F964D9BF /* IndicatorInfo.swift */,
+				CDC9460080C012F737FB475EF35F7A16 /* PagerTabStripBehaviour.swift */,
+				C7F5691351A022F1934459980095D181 /* PagerTabStripError.swift */,
+				CC44C42570812822B152C04ABD746B50 /* PagerTabStripViewController.swift */,
+				63E398C5A63D1CDEF0DB367AC5A17851 /* SegmentedPagerTabStripViewController.swift */,
+				A60EB7CBCAC4EDDAEDEEC35237EB1651 /* SwipeDirection.swift */,
+				958B61EDC4EAC226B1D7BE0E1D6DE0E2 /* TwitterPagerTabStripViewController.swift */,
+				1222ED19D8CB414C64F6478D6A6C09A3 /* Resources */,
+				A96C83C0073029C48C48EFF950A56252 /* Support Files */,
+			);
+			path = XLPagerTabStrip;
+			sourceTree = "<group>";
+		};
+		1003C07C2A8DE85B247E4F1C75DAF787 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6BB34F44216B6F7C9B7C019CE0759D64 /* ar.lproj */,
+				DDE37056BE43F162D25D7CEAD7FD8CB8 /* Base.lproj */,
+				08924358BE9F13F2DDDF9FD5F0013172 /* da-DK.lproj */,
+				0EC1928FFA7C2F707878FDF784F00DCD /* de.lproj */,
+				3501F01025BCC87DFDE6F21BD2E8AD7D /* en.lproj */,
+				DFF229E23A963A907B066C038266D971 /* es.lproj */,
+				377CE7D7BFFF378A6B4E00DB80437469 /* fr.lproj */,
+				1AC2A105778380400C7410758840D942 /* hu.lproj */,
+				5A03F2712BD872F676B3BFC62B5FDBA0 /* id.lproj */,
+				106590C423BD16E83DAC7D3A324F3D9D /* it.lproj */,
+				F2D7B32FCE106960750EF0DF6F9DDFF3 /* ja.lproj */,
+				C7C24B9DB08B439962C0F3D9904DD574 /* ko.lproj */,
+				7CA5C1E53E90A009D924C16DC2AFE32B /* ms.lproj */,
+				A9858031C203E11C26395108AD48BFC5 /* nl.lproj */,
+				DABF5DAF3CFEADDF385834EE967FA922 /* pl.lproj */,
+				C4E9C89A73C1D657FDB637C508A17044 /* pt.lproj */,
+				C12901689A88F1C8D2F877AA5D6408F7 /* ro.lproj */,
+				77800038F65DC7FC57808B4905707CB0 /* ru.lproj */,
+				E4DFD4ADBCFCD40802E6E8C3A0266B76 /* tr.lproj */,
+				DCC5E1EC9FD0478F58414AB7519E8EF1 /* vi.lproj */,
+				BE08A63513F43473885210A58AC19648 /* zh-Hans.lproj */,
+				CE9BD61A73B56D2BD0B9E75C9A599212 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1222ED19D8CB414C64F6478D6A6C09A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A429B1958A998F993F14DFE4583810B /* ButtonCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1CC49E672FCC701F859EFA8C71D524C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				114D13C18B8BE46B5CBE5257CAC2603D /* ReachabilitySwift.modulemap */,
+				27F4176F4600958755B3935274D71544 /* ReachabilitySwift.xcconfig */,
+				4D0F7E243917C613BF5BA3AB8D358D23 /* ReachabilitySwift-dummy.m */,
+				34132EF7A57B9A91C7787F57D9EFC869 /* ReachabilitySwift-Info.plist */,
+				E393CBA392ACAFF5027A5B907014C61C /* ReachabilitySwift-prefix.pch */,
+				BBD02C66531E74DF1A24C39694AFB763 /* ReachabilitySwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		282655326ECFCB396313FFD530BE6930 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30E9F4C26F29AE381A04241C9DAAB784 /* CropViewController.modulemap */,
+				5DAF04A9B3C4B97AA94ABCE89884BEE2 /* CropViewController.xcconfig */,
+				7C317A078B4A6B8C785D3F24F6D5DFFF /* CropViewController-dummy.m */,
+				60A9E548CF41136B940EB6F40E23115C /* CropViewController-Info.plist */,
+				E181AD34A81D2544CD6CF949CEABDD7B /* CropViewController-prefix.pch */,
+				4C902DBAA8134E5B72490CFD52997CD3 /* CropViewController-umbrella.h */,
+				C5EF017E7246A8509854DBD969CC68C8 /* ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CropViewController";
+			sourceTree = "<group>";
+		};
+		3421467D7000C0BBF40427FF809CCC7A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A214480CAF52933F8411F04060808F73 /* Pods-RightManagement */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		50EE036CAF28635142A0B1ECFB150154 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E919B61B8520761C147C647D1597FDD6 /* CropViewController.framework */,
+				3F70079AB33818C729DDB577F5C01C2C /* Pods_RightManagement.framework */,
+				6508E7F5E232785B8B6B55F9BF7C519B /* ReachabilitySwift.framework */,
+				E947A4333A018E4AA7B383D3C632B729 /* SSCalendar.bundle */,
+				8F73C6C86E667A5FBA94E21AFD75D423 /* SSCalendar.framework */,
+				CEAAEC012FA780B8174B8CC0B7E6303A /* TOCropViewControllerBundle.bundle */,
+				34E571F1BAEB9C08A9E9CDD8FAD7F8B2 /* XLPagerTabStrip.bundle */,
+				CE05CEDE37BE18AF765B1B81018146A6 /* XLPagerTabStrip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AF36F41034052ADA73BD7194AD872A9 /* CropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				854BD6F9851A2D1CDADE77FF8E056D6C /* CropViewController.h */,
+				69C8C86C55E586D4469FC319892F52D3 /* CropViewController.swift */,
+				9A78979DD20F53423F33C21F88E268F4 /* TOActivityCroppedImageProvider.h */,
+				CFAE16AD7C2F08E94151857EF7C9FE36 /* TOActivityCroppedImageProvider.m */,
+				37CF4FE5607283FD15987EF1AB2A5F47 /* TOCropOverlayView.h */,
+				3FDC033FAC7203B48BFDAEECA71D2600 /* TOCropOverlayView.m */,
+				9ECECED6253289C6417A8E2D16DCB375 /* TOCroppedImageAttributes.h */,
+				FFB7C376D959784CA3CFE27243BECFC5 /* TOCroppedImageAttributes.m */,
+				9BD0F1E494EFC1C8838BC696C0ACCCAC /* TOCropScrollView.h */,
+				327CBA9060C8AC50BA8C57C7FED2196C /* TOCropScrollView.m */,
+				1967170B6D16499EB5D8B150332CE5AC /* TOCropToolbar.h */,
+				D74E4672A2889A161FE0760CF55518C5 /* TOCropToolbar.m */,
+				2808185DE2CCB3DF335935E187BFC18A /* TOCropView.h */,
+				69DD855B9172C1CA71B6CA34DAC74538 /* TOCropView.m */,
+				9400F8F9DAFA4A0CCBD59ED974711567 /* TOCropViewConstants.h */,
+				F1A53B4A3EDCAFD5F28B5DA3A9B37E2E /* TOCropViewController.h */,
+				3E7AB88B030C0BCB61A62B1ED615059A /* TOCropViewController.m */,
+				0A13A2CA53222D1EE42ADC8D8D847E8D /* TOCropViewControllerTransitioning.h */,
+				39AFE4124F719C0A7D0C20AC5BC95857 /* TOCropViewControllerTransitioning.m */,
+				8080C92487341AA461E9CE9AD2946DB1 /* UIImage+CropRotate.h */,
+				8ADC69D93CAC52D654BC9C97ECCB5FF7 /* UIImage+CropRotate.m */,
+				1003C07C2A8DE85B247E4F1C75DAF787 /* Resources */,
+				282655326ECFCB396313FFD530BE6930 /* Support Files */,
+			);
+			path = CropViewController;
+			sourceTree = "<group>";
+		};
+		A214480CAF52933F8411F04060808F73 /* Pods-RightManagement */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57BC6668D73D0819A4BD18B496F0C /* Pods-RightManagement.modulemap */,
+				BDFB8D4F6D8EE470382FBA422B37C708 /* Pods-RightManagement-acknowledgements.markdown */,
+				F42A436C2EA52B0452320131CC7B5AB1 /* Pods-RightManagement-acknowledgements.plist */,
+				97FD9E38D74B4A29BDC27B435B9CBBAC /* Pods-RightManagement-dummy.m */,
+				7C2A25FB2A16E44BF977F6E0261DF067 /* Pods-RightManagement-frameworks.sh */,
+				D549F8CBC4DE510148DDA20CDC953762 /* Pods-RightManagement-Info.plist */,
+				4EC250D47491F462D12B4B5313F55C86 /* Pods-RightManagement-umbrella.h */,
+				5E51562FFEB3B1F18AC5BB014335EC6E /* Pods-RightManagement.debug.xcconfig */,
+				CFC258015B0019BC3178D2D0DAD71E3F /* Pods-RightManagement.release.xcconfig */,
+			);
+			name = "Pods-RightManagement";
+			path = "Target Support Files/Pods-RightManagement";
+			sourceTree = "<group>";
+		};
+		A96C83C0073029C48C48EFF950A56252 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E615411204691932767815DA8EA597C /* ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist */,
+				5F16CC8A48951739F67E7E6B72F4CE00 /* XLPagerTabStrip.modulemap */,
+				DCF876423F97BC372631EC5034ECB92F /* XLPagerTabStrip.xcconfig */,
+				9276229C5049CBC3D950FD077970C882 /* XLPagerTabStrip-dummy.m */,
+				27E69BBDFD3838F21356650A5F99794B /* XLPagerTabStrip-Info.plist */,
+				7C604E402D41C0D6D9597ECDB2B514A0 /* XLPagerTabStrip-prefix.pch */,
+				49A02E80CA68E2157D883318B2DBCC49 /* XLPagerTabStrip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XLPagerTabStrip";
+			sourceTree = "<group>";
+		};
+		AAFFE1AA31F805E6B578B5A17421DBB2 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				CE083A35A85F83EB0302E154B4CA8D0D /* Reachability.swift */,
+				1CC49E672FCC701F859EFA8C71D524C4 /* Support Files */,
+			);
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		AE5B86B527F0DD2AA57E4F40AB7903BD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99B0139F7FB274B982309C20D52CCE2A /* ResourceBundle-SSCalendar-SSCalendar-Info.plist */,
+				194A0A1074933D0CFB9850AAC43B38C8 /* SSCalendar.modulemap */,
+				E734F769A88AAC3B5BFB6507A7A8DC9F /* SSCalendar.xcconfig */,
+				164116B5B4AE6F41ACECE68153D46D3B /* SSCalendar-dummy.m */,
+				B17FF2F98CDC61A3D35B1C469CE9C1D0 /* SSCalendar-Info.plist */,
+				14B84866B343AD66E7B57F0D7FE917ED /* SSCalendar-prefix.pch */,
+				BDB066E1134FFE0571EB22B1CCB455CF /* SSCalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSCalendar";
+			sourceTree = "<group>";
+		};
+		B89D126C0295C6023BB3B66E05457D8A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B736A3ED9790601CD7E2CBCB8485496E /* Foundation.framework */,
+				21DD710BA5A4AB81A7F6F7536F4A18A3 /* SystemConfiguration.framework */,
+				E64702E482254F0D3A0301E1ED0D97BF /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C1833B1A6FC4294FB38A13B96D2B1651 /* SSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				A37E3202F389D89310BDA0D73F919784 /* SSCache.h */,
+				8C58367ED1628063975E8A93DD9371DE /* SSCache.m */,
+				BB1135A6F16A95BE0990E5D0B310EA5D /* SSCalendarAnnualCell.h */,
+				13613B9A3E7869C7266686097353C7FC /* SSCalendarAnnualCell.m */,
+				77BC9E8D677A33EE61B26035F6B44BC9 /* SSCalendarAnnualCell.xib */,
+				7308A67788A4D744F5DA4CB0CF6170B1 /* SSCalendarAnnualDataSource.h */,
+				FD244B31577B6597B0B7E0DCA0BE59F9 /* SSCalendarAnnualDataSource.m */,
+				37F1F6D199D6F41301719E251633040F /* SSCalendarAnnualHeaderView.h */,
+				3818ED8685797610C62B19C072756AF7 /* SSCalendarAnnualHeaderView.m */,
+				355A1DEF1659DAA3FA9D01A6F57F4936 /* SSCalendarAnnualHeaderView.xib */,
+				C23EC2E40EC6A3814B15116661AD2945 /* SSCalendarAnnualLayout.h */,
+				0929C316FDD66D8F9CE7158A0C1D4E93 /* SSCalendarAnnualLayout.m */,
+				2024BF01357E59303D4A4B55D6BBE557 /* SSCalendarAnnualViewController.h */,
+				B6EE25F1BA43BD416772E13A7D70F8C8 /* SSCalendarAnnualViewController.m */,
+				6675C2A3CF856151C5DE5841B5B15BA1 /* SSCalendarAnnualViewController.xib */,
+				1546CAFC45C2FC9F729BCE9D793FD1B5 /* SSCalendarCache.h */,
+				32CCADC1A773EBCD48ACBADC2D0D4775 /* SSCalendarCache.m */,
+				7C453DCB7F7FB8E89CCDF35034EDAAD9 /* SSCalendarCountCache.h */,
+				DB26D011BBAB521DADEF98FB822ECFD2 /* SSCalendarCountCache.m */,
+				42E26BEBCCDC7D9DE90D1A49D8F52323 /* SSCalendarDailyViewController.h */,
+				069D8BB9BE141B0E01AC75DBDF37B576 /* SSCalendarDailyViewController.m */,
+				8DC4207F8A18B020B2DF8F7315BEFB8B /* SSCalendarDailyViewController.xib */,
+				C9E3906BB7BAA33FC346C14125462FDA /* SSCalendarDayCell.h */,
+				50D1EDBFF1117FF44020E7DCFC44894F /* SSCalendarDayCell.m */,
+				BBD3E56768783A044AC2A8410CDF81C7 /* SSCalendarDayCell.xib */,
+				19CBD37EF547968CC5594C6CD47FFBD8 /* SSCalendarDayLayout.h */,
+				1EDBB7E61C2BC6C6F26209395CDE7B6D /* SSCalendarDayLayout.m */,
+				904F7AEAB72D5BDC7F8BE6FC00F73CEE /* SSCalendarDayViewController.h */,
+				D72EE8A1E98B998D82426DAF2EE893FC /* SSCalendarDayViewController.m */,
+				A28209CA0C19DC69774D284562041F57 /* SSCalendarEventsCell.h */,
+				B0105647A0B81F2E077669563ECE88DE /* SSCalendarEventsCell.m */,
+				5041B6A8B7782C5C4546D99B28E4B481 /* SSCalendarEventsCell.xib */,
+				0F7B9C04D9E04E570D99F96340DB59B2 /* SSCalendarEventsTableViewController.h */,
+				A48845B68DBCBEC79E8A250831D69C1D /* SSCalendarEventsTableViewController.m */,
+				EFD5AD26DBF190BAB1F3EE6EB96CE103 /* SSCalendarEventTableViewCell.h */,
+				FB5ACA234D55EA18AA5BC35C1ACE80A0 /* SSCalendarEventTableViewCell.m */,
+				6739DC98715157E65726A87E2BCA248A /* SSCalendarMonthlyDataSource.h */,
+				1DAE8490FC428341C4D51FF6D16206DE /* SSCalendarMonthlyDataSource.m */,
+				CC7766FD053F9A299C742A152FBEAC29 /* SSCalendarMonthlyHeaderView.h */,
+				B6E33CD70ADD90E09292A646A6882AF7 /* SSCalendarMonthlyHeaderView.m */,
+				84C8728E2FDDEE7AB2C71F69957B35AA /* SSCalendarMonthlyHeaderView.xib */,
+				2B8A85756125B7DAF8D2170292E66C92 /* SSCalendarMonthlyLayout.h */,
+				4352DFA91533D89DEE098E4C66A2FFCB /* SSCalendarMonthlyLayout.m */,
+				28594FA14E1C10F754E69E6155F63F50 /* SSCalendarMonthlyViewController.h */,
+				25157E58DD41100183F4305E1AAF68B4 /* SSCalendarMonthlyViewController.m */,
+				C43A885CC3C33F017F58D7F8F4B9E7C8 /* SSCalendarMonthlyViewController.xib */,
+				D4D5E79229D56EFF0C847D1C82841A9A /* SSCalendarUtils.h */,
+				7C2F3B7B67E98D055D4A2AE52212D3B6 /* SSCalendarUtils.m */,
+				D979BA51B19042849A8E19CF233CBAD0 /* SSCalendarWeekHeaderView.h */,
+				E3C8146721D39D5159E73D807A77261A /* SSCalendarWeekHeaderView.m */,
+				8B58B13528CB24A7E3E34D542A86C8A6 /* SSCalendarWeekLayout.h */,
+				8F10AB743F5FD023121B4CB8F3B790C6 /* SSCalendarWeekLayout.m */,
+				F22277F565A93B5D1613C117F288C1FA /* SSCalendarWeekViewController.h */,
+				43D4FDF365384A1B53AC6787BFF9DFB9 /* SSCalendarWeekViewController.m */,
+				2D63C0F375F643D36A7AAE0E2A383AE7 /* SSColors.h */,
+				59873A487F1C4E545B524424F7A25A15 /* SSConstants.h */,
+				669DD2258C8A142D300368BAAFDF5F07 /* SSDataController.h */,
+				583B3FEA6C1337D791037A3E7844474E /* SSDataController.m */,
+				F445BFE11C260081AF7875028C7CF14D /* SSDayNode.h */,
+				808A19B823C218B1E018948DAA1AA9A0 /* SSDayNode.m */,
+				461ECEE58B8E57322536BD42AA3F50C1 /* SSDimensions.h */,
+				94DC2E74ABAD93B35868C8A43366AE6E /* SSDimensions.m */,
+				F983FAD472B8E2A85DA1701CA2D87954 /* SSEvent.h */,
+				B257106603472D577FADD24ACE187E5F /* SSEvent.m */,
+				071B99F4CE33E208F0359A3CA1E30DB7 /* SSMonthNode.h */,
+				752074EE69C1D014FD0598F555C5DFA7 /* SSMonthNode.m */,
+				8EBD5C979D11B90004C3A12DC0522E07 /* SSStyles.h */,
+				0121B9CB8F0F7D1C4EC970B3FD207D1A /* SSStyles.m */,
+				02E53DDFB475326C173E18F66A31F459 /* SSYearNode.h */,
+				C5C0747BEB211FD17CBC04F4791D6702 /* SSYearNode.m */,
+				A78EB16A3A2CF683E90C287A1EE0F593 /* StellarConversionUtils.h */,
+				F377237C9B40F98FE76ACCC79AF6F8A1 /* StellarConversionUtils.m */,
+				AAC9747A11EDC8C66E16E01E4CDFACA8 /* UIColor+StellarAdditions.h */,
+				03E406814053670406B8D080797396D2 /* UIColor+StellarAdditions.m */,
+				E9341EC0FF3901A01B5865D6169041F2 /* Resources */,
+				AE5B86B527F0DD2AA57E4F40AB7903BD /* Support Files */,
+			);
+			path = SSCalendar;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				D22CE8B6984E06D76E365CAE9462FA78 /* Pods */,
+				50EE036CAF28635142A0B1ECFB150154 /* Products */,
+				3421467D7000C0BBF40427FF809CCC7A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D22CE8B6984E06D76E365CAE9462FA78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AF36F41034052ADA73BD7194AD872A9 /* CropViewController */,
+				AAFFE1AA31F805E6B578B5A17421DBB2 /* ReachabilitySwift */,
+				C1833B1A6FC4294FB38A13B96D2B1651 /* SSCalendar */,
+				0ECB9721A362E97929BEE6B02C6CFC0C /* XLPagerTabStrip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9341EC0FF3901A01B5865D6169041F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		39A25EAC25F5FA9F4496FA999100A655 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46076A777BCB5548BC8D8D138195AE0A /* CropViewController-umbrella.h in Headers */,
+				9E1211258F6AB8323084080B859BA04B /* CropViewController.h in Headers */,
+				F3C631F6328808B8BEFF6CCC892D2124 /* TOActivityCroppedImageProvider.h in Headers */,
+				35BB8A17B6A4EBA4DB02ACA4304C010B /* TOCropOverlayView.h in Headers */,
+				8131DF1F3857C35EAB3483544B7ACE47 /* TOCroppedImageAttributes.h in Headers */,
+				544B146558BC502F4E07C0AED691895C /* TOCropScrollView.h in Headers */,
+				EA5307F66EF7D47FEDE4B4F3C7FF57BD /* TOCropToolbar.h in Headers */,
+				CA97B071056C56E4BA9E78352C3AC909 /* TOCropView.h in Headers */,
+				D01769302733264D4089D34FA635441E /* TOCropViewConstants.h in Headers */,
+				78C6AA5860DEB21DB36C2272E3EC03DF /* TOCropViewController.h in Headers */,
+				6EA6D7F3EABF8EEFF59B3892E87EE57C /* TOCropViewControllerTransitioning.h in Headers */,
+				1DDF1AB18F56C275DC92BCB16C62D4D9 /* UIImage+CropRotate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627D0187485D85374584760339B42C7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E757707E82C57F97A4544DC7C71074 /* SSCache.h in Headers */,
+				2B500298A623C5A0A527ECDBC1D702E5 /* SSCalendar-umbrella.h in Headers */,
+				D8BF4474699AF6E7B66483669C521D9D /* SSCalendarAnnualCell.h in Headers */,
+				B941F6A714CCB988C48CA9BC7C57B325 /* SSCalendarAnnualDataSource.h in Headers */,
+				00FC75B130B1A7CE151FFBAB87D69675 /* SSCalendarAnnualHeaderView.h in Headers */,
+				AB1DE08085BB3F38FFE5F984378078EA /* SSCalendarAnnualLayout.h in Headers */,
+				5C076D6F5F5A5E0CC295B3A498B833F1 /* SSCalendarAnnualViewController.h in Headers */,
+				203C06980C2EB78E34641C5150A7EC10 /* SSCalendarCache.h in Headers */,
+				5804E13775691C799D172F9AAE7E5F79 /* SSCalendarCountCache.h in Headers */,
+				699247C756CBD876A62617136EC91434 /* SSCalendarDailyViewController.h in Headers */,
+				EF56C32447C00869D3C3F416BC4E1696 /* SSCalendarDayCell.h in Headers */,
+				63C03DB1EF747F1A74725630AFEE8D62 /* SSCalendarDayLayout.h in Headers */,
+				84D41982C6B39887433514944F35ACAA /* SSCalendarDayViewController.h in Headers */,
+				B3F9CDC317116F2D5EB7DB07E358641B /* SSCalendarEventsCell.h in Headers */,
+				772B67171876DB701846B675A96B80C5 /* SSCalendarEventsTableViewController.h in Headers */,
+				BF2F03813D6AC60255EC000FE16F3E41 /* SSCalendarEventTableViewCell.h in Headers */,
+				6845EF4FFBD2CB9F1306A5BB10FB83BF /* SSCalendarMonthlyDataSource.h in Headers */,
+				EDF0C3D4D7C41B9193074F5442D5F30E /* SSCalendarMonthlyHeaderView.h in Headers */,
+				39C620FCC35A180A45F259EBF2BF37BB /* SSCalendarMonthlyLayout.h in Headers */,
+				533B30E41B18040D5FBB2F10BD9A507F /* SSCalendarMonthlyViewController.h in Headers */,
+				65E107B3D57D3F1C8E8399AF42F9606C /* SSCalendarUtils.h in Headers */,
+				96652B83C4871D53519E26E47F119FFE /* SSCalendarWeekHeaderView.h in Headers */,
+				6F702E1894D2D94ACA54A677997C495E /* SSCalendarWeekLayout.h in Headers */,
+				3CDA42F1535FC62BA52DCA5D58ACEAD7 /* SSCalendarWeekViewController.h in Headers */,
+				ED6460FA7D8FEACCAC1AD5580D903BFB /* SSColors.h in Headers */,
+				6847E692D3AEC69556F5DD99D031A05C /* SSConstants.h in Headers */,
+				C3041203DC2E323A62D01F59E1732707 /* SSDataController.h in Headers */,
+				135ED1CCC7FD2DF1407EAB8E9301450D /* SSDayNode.h in Headers */,
+				15979D61B8D9EFB59A3DAB366A771DC6 /* SSDimensions.h in Headers */,
+				6CC31E9657FD54A87B2D905C37F0543B /* SSEvent.h in Headers */,
+				1752C363EAE9AF466EC944E1EB4C3D8E /* SSMonthNode.h in Headers */,
+				2F737FFFD2683F1E1FCE73D45D63380B /* SSStyles.h in Headers */,
+				407E9911FF2D8F87BCAFBAC9EB1AEADF /* SSYearNode.h in Headers */,
+				51FB6BE87EDDADA14BD7A380354AD19F /* StellarConversionUtils.h in Headers */,
+				15255614115DB156030B1F6C6D366283 /* UIColor+StellarAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E64679060801214CC6F0F0CE2DB659 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5690EA9A3F2C767E3CB862E6B4AB21E2 /* Pods-RightManagement-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB23D298FE8B9B5F7838D56C5E6C8FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8232A27FBC57E7305DC396B3CB4D8407 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F46C45ABF6388C895A6C1CF799559E54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7C359DA2B5DA079C1B1F724B77A6304 /* FXPageControl.h in Headers */,
+				CBB2F2A873BCCC1B9738CFE727D2A58B /* XLPagerTabStrip-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		181981B726BB7BBB8A70D8D82FB87061 /* XLPagerTabStrip-XLPagerTabStrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86C684D4931D8F8C501CCF58B25FD17D /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
+			buildPhases = (
+				AD9AC3D1F641A794188A5F1CDA663770 /* Sources */,
+				C6D281EB5D7B3BD76DEFB5B6ED1E6705 /* Frameworks */,
+				27CCC67ACEC50150F5D4CBB46FDFFE3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			productName = "XLPagerTabStrip-XLPagerTabStrip";
+			productReference = 34E571F1BAEB9C08A9E9CDD8FAD7F8B2 /* XLPagerTabStrip.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		664DDBDCEBE983C99446280FE910D811 /* Pods-RightManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B2D9F5369074EA0D099B3D59344A650 /* Build configuration list for PBXNativeTarget "Pods-RightManagement" */;
+			buildPhases = (
+				D4E64679060801214CC6F0F0CE2DB659 /* Headers */,
+				4F6DC8C685DA4E784013EECC9D9DAC19 /* Sources */,
+				A3369E6594F5A2D0379A3ADEC62CC10B /* Frameworks */,
+				971647AA445ADA764C28DE5865887E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74CC68DBD1844EC594CDF1932391BB83 /* PBXTargetDependency */,
+				06D48334909075C511121E7141C8448A /* PBXTargetDependency */,
+				ADA3554A17B15CDC9D15A0E4FCBE0ACA /* PBXTargetDependency */,
+				991D018D4ED779E64ECA8C686EFC7FC4 /* PBXTargetDependency */,
+			);
+			name = "Pods-RightManagement";
+			productName = "Pods-RightManagement";
+			productReference = 3F70079AB33818C729DDB577F5C01C2C /* Pods_RightManagement.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4A6B1D8D8E67A8D8F7BC561911E43A3 /* SSCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77C604C2B9B48950E4FEC583FF0D4964 /* Build configuration list for PBXNativeTarget "SSCalendar" */;
+			buildPhases = (
+				627D0187485D85374584760339B42C7C /* Headers */,
+				7807BF56C86B6A7D47C040100FE79998 /* Sources */,
+				35DEA42CB1C3A29E88DB4EA699C5A8AB /* Frameworks */,
+				E6D72775FD8CCED807850573CB9BBB14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EA319A315D8479DAB2F82F8D2022228 /* PBXTargetDependency */,
+			);
+			name = SSCalendar;
+			productName = SSCalendar;
+			productReference = 8F73C6C86E667A5FBA94E21AFD75D423 /* SSCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C59B34511F05B57A3858C8B2A04A9D15 /* CropViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB64971412431508120DC60C53803AD1 /* Build configuration list for PBXNativeTarget "CropViewController" */;
+			buildPhases = (
+				39A25EAC25F5FA9F4496FA999100A655 /* Headers */,
+				AAF3D376C32DFF05893935E363DD93EB /* Sources */,
+				4BC904EE57E618F97026D50ACAB57A18 /* Frameworks */,
+				5D4BDB739E3CBAC73EBE9560F406C431 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0107BDD36C85CD41A8D8959B09D98490 /* PBXTargetDependency */,
+			);
+			name = CropViewController;
+			productName = CropViewController;
+			productReference = E919B61B8520761C147C647D1597FDD6 /* CropViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8DB81E2CA9E68019BB07E5FB2E02312 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4138B448CC1298A7AC4674B0385CF4C2 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				EAB23D298FE8B9B5F7838D56C5E6C8FE /* Headers */,
+				5D9B29771D24E83F2779C32F0C3CB339 /* Sources */,
+				3C9B6E2963A78CD8AD0874C93E58CF56 /* Frameworks */,
+				151AF77A3DCF9786C9A6405CCE4CB17B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = ReachabilitySwift;
+			productReference = 6508E7F5E232785B8B6B55F9BF7C519B /* ReachabilitySwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D00396B4322591FABEE1F0002CD058D2 /* SSCalendar-SSCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F7BDFD601E44DBC381D85E81E74FC1F /* Build configuration list for PBXNativeTarget "SSCalendar-SSCalendar" */;
+			buildPhases = (
+				5D805EE3CE6F9D9BBA9FBFEE6B9B6F14 /* Sources */,
+				FEE2317740F7BC517A5777EFD91AE99A /* Frameworks */,
+				886852D448E5D61467ACA3219ABE3AF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SSCalendar-SSCalendar";
+			productName = "SSCalendar-SSCalendar";
+			productReference = E947A4333A018E4AA7B383D3C632B729 /* SSCalendar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E3319F23E2D445B8B019003D822884FD /* XLPagerTabStrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25A15367B90D15EF50FB5F5017C8EA79 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
+			buildPhases = (
+				F46C45ABF6388C895A6C1CF799559E54 /* Headers */,
+				FDEFAF29E505FC857C4A10BE360B9C85 /* Sources */,
+				F7EEA021A59EBE061EED04FD87FF7AE9 /* Frameworks */,
+				219B68E763F4D018ABA68680018D64E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				224B4D44CBB018B0752C4B634DC9F636 /* PBXTargetDependency */,
+			);
+			name = XLPagerTabStrip;
+			productName = XLPagerTabStrip;
+			productReference = CE05CEDE37BE18AF765B1B81018146A6 /* XLPagerTabStrip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8690E9C865E9F085058559585223B97 /* CropViewController-TOCropViewControllerBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC542EF867BA3247978EAABDF125FC8B /* Build configuration list for PBXNativeTarget "CropViewController-TOCropViewControllerBundle" */;
+			buildPhases = (
+				77EDBFAA60EA1EE0BACE8BDFF3FC0C16 /* Sources */,
+				A8BF395C11331F8E6190251FF35F858B /* Frameworks */,
+				3F3F97B7C0BA97EF44EC7E08420E3534 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CropViewController-TOCropViewControllerBundle";
+			productName = "CropViewController-TOCropViewControllerBundle";
+			productReference = CEAAEC012FA780B8174B8CC0B7E6303A /* TOCropViewControllerBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 50EE036CAF28635142A0B1ECFB150154 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C59B34511F05B57A3858C8B2A04A9D15 /* CropViewController */,
+				F8690E9C865E9F085058559585223B97 /* CropViewController-TOCropViewControllerBundle */,
+				664DDBDCEBE983C99446280FE910D811 /* Pods-RightManagement */,
+				C8DB81E2CA9E68019BB07E5FB2E02312 /* ReachabilitySwift */,
+				B4A6B1D8D8E67A8D8F7BC561911E43A3 /* SSCalendar */,
+				D00396B4322591FABEE1F0002CD058D2 /* SSCalendar-SSCalendar */,
+				E3319F23E2D445B8B019003D822884FD /* XLPagerTabStrip */,
+				181981B726BB7BBB8A70D8D82FB87061 /* XLPagerTabStrip-XLPagerTabStrip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		151AF77A3DCF9786C9A6405CCE4CB17B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		219B68E763F4D018ABA68680018D64E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC019576000641B37D8089B84F2EA63 /* XLPagerTabStrip.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27CCC67ACEC50150F5D4CBB46FDFFE3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D22A268E5103140332712B904225644 /* ButtonCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3F97B7C0BA97EF44EC7E08420E3534 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E11F5EC4A30E2916B30CFE3DD1BA085 /* ar.lproj in Resources */,
+				FF24424B3E1F7E4DF81E47DDC0DDB0C7 /* Base.lproj in Resources */,
+				DDF746CCFA4F8AE189BD15BB662DBABC /* da-DK.lproj in Resources */,
+				0ED146A16B38CA7A54EF6D0B77CF8B74 /* de.lproj in Resources */,
+				40C4AB6FD92661ABEA9BA86F6EB04D5C /* en.lproj in Resources */,
+				9A055B42DE1F1074946A6F9E1D5EE706 /* es.lproj in Resources */,
+				15CB62A59DDCFBCB89A243FFF52FF0D2 /* fr.lproj in Resources */,
+				27FECA49D0A446D448329F6E696A107F /* hu.lproj in Resources */,
+				E951ED21CEDBBF57B436E88A1FB502DA /* id.lproj in Resources */,
+				DBC8838E4F3A5272D8329B64E5CB7EB3 /* it.lproj in Resources */,
+				C6F568EBB6BF37E605C36F002958505F /* ja.lproj in Resources */,
+				E6BFE93AC9E9CBC3871105C9F7F3BD25 /* ko.lproj in Resources */,
+				CCFD6590143643992AC50D1C1A96DE9E /* ms.lproj in Resources */,
+				739ADBD9B4C6A6CA17931B2099F20F30 /* nl.lproj in Resources */,
+				B17B8F08D11E3CA3F7091B02198059A9 /* pl.lproj in Resources */,
+				ACA53E77686212E88DBEB61EA3C810F3 /* pt.lproj in Resources */,
+				DC498807FB5780EDCC348D7BA6A130FC /* ro.lproj in Resources */,
+				5FA41D322FB00ECFFF007045BDB4CDBB /* ru.lproj in Resources */,
+				6F596BE9FE0B26B44E526402A45FD7EF /* tr.lproj in Resources */,
+				2CF5400E4E33EAB68AAC520DB8664F12 /* vi.lproj in Resources */,
+				D998EBD05D6290474A55F4490056B4CA /* zh-Hans.lproj in Resources */,
+				374DDD6B36B8F49693DF35E5988F028A /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D4BDB739E3CBAC73EBE9560F406C431 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEFEF938C88CB3140DF857AF7C5BAA87 /* TOCropViewControllerBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		886852D448E5D61467ACA3219ABE3AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA0547DC193D2E248A9EF9D80F7477F /* SSCalendarAnnualCell.xib in Resources */,
+				EEF395DA82669C0FB56B30A874BF723F /* SSCalendarAnnualHeaderView.xib in Resources */,
+				C51B5E7E5F5869E3460A5A3AE7C8A4C2 /* SSCalendarAnnualViewController.xib in Resources */,
+				5289FD2A62A91485F59FB22A07EA947D /* SSCalendarDailyViewController.xib in Resources */,
+				6DF862121E051D37AC5CC5E410773374 /* SSCalendarDayCell.xib in Resources */,
+				080D06ADD67EE72855A99DDAF0AC66DE /* SSCalendarEventsCell.xib in Resources */,
+				C4A17E37D86967468AF4D84012474FD1 /* SSCalendarMonthlyHeaderView.xib in Resources */,
+				DD794E66F9274E174C445E67DEF20783 /* SSCalendarMonthlyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971647AA445ADA764C28DE5865887E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6D72775FD8CCED807850573CB9BBB14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E655F6DE0044826E097CEE4AFB955DC7 /* SSCalendar.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F6DC8C685DA4E784013EECC9D9DAC19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E2D9B365F6AD89D666FF3424327C36 /* Pods-RightManagement-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D805EE3CE6F9D9BBA9FBFEE6B9B6F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D9B29771D24E83F2779C32F0C3CB339 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20932C0D07A3C9A65E70E2383DD160B7 /* Reachability.swift in Sources */,
+				1BA2403228E95080529D79C97F870D36 /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77EDBFAA60EA1EE0BACE8BDFF3FC0C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7807BF56C86B6A7D47C040100FE79998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F534193E216B4D9B34EC8CF06556C68A /* SSCache.m in Sources */,
+				B6650E9539E85FBF33E864A0EBCDB832 /* SSCalendar-dummy.m in Sources */,
+				9F984F832BC753E9E7921265DF32BEFC /* SSCalendarAnnualCell.m in Sources */,
+				1DEF02C4F4727B53FFCDCD5810EDB9EB /* SSCalendarAnnualCell.xib in Sources */,
+				AF9FE2888A7BF83B20A22C6D6183C2AC /* SSCalendarAnnualDataSource.m in Sources */,
+				832EE08D4C177004A604334E682A3020 /* SSCalendarAnnualHeaderView.m in Sources */,
+				3C5972A574A95F6CC64CAEDA5DBE237A /* SSCalendarAnnualHeaderView.xib in Sources */,
+				A09AFCE7C050526FC0775227C115E783 /* SSCalendarAnnualLayout.m in Sources */,
+				C962EFEE168B125671F84D4729EE5325 /* SSCalendarAnnualViewController.m in Sources */,
+				74A8FE21526A89FDC1BEE83BED1E167B /* SSCalendarAnnualViewController.xib in Sources */,
+				12B7593587D5C530246828D77E41F2EB /* SSCalendarCache.m in Sources */,
+				EB9C5E9D33033FBF4EC0DBAD507FD92D /* SSCalendarCountCache.m in Sources */,
+				1391C1B0781F49D21DBEA3363FE24C75 /* SSCalendarDailyViewController.m in Sources */,
+				151ED65E476776F2EF186F43687116A8 /* SSCalendarDailyViewController.xib in Sources */,
+				F8820B6907DEF8AAD58141ACE4DD955F /* SSCalendarDayCell.m in Sources */,
+				C8A2EA5E6F0D1B2C10477A12E8AD3402 /* SSCalendarDayCell.xib in Sources */,
+				E5D5A23599CC9DB260724170A09C003C /* SSCalendarDayLayout.m in Sources */,
+				BFB8D97EEC12E421E68B5AC8E1C9988C /* SSCalendarDayViewController.m in Sources */,
+				1037C9E873ACBD9CEB794D0CB90893DD /* SSCalendarEventsCell.m in Sources */,
+				A704F471A2E296D11DCF21EBB25AFCF7 /* SSCalendarEventsCell.xib in Sources */,
+				E5BBC9412AFB4164C1232B022DA320CD /* SSCalendarEventsTableViewController.m in Sources */,
+				456363E901E4E678375017518F22F5F1 /* SSCalendarEventTableViewCell.m in Sources */,
+				7C78CDE5769FBA24716D7049535B9C04 /* SSCalendarMonthlyDataSource.m in Sources */,
+				D4EE599970EFF092BD1423B35618923C /* SSCalendarMonthlyHeaderView.m in Sources */,
+				16363C1FEF6F274B31EA3C6700DBE682 /* SSCalendarMonthlyHeaderView.xib in Sources */,
+				A2943553516D66AAB249865026FD2A92 /* SSCalendarMonthlyLayout.m in Sources */,
+				ABD651A2CA07FFA37A0CD1503552DE2E /* SSCalendarMonthlyViewController.m in Sources */,
+				753C7656BF3E81EE18CBDA3DFB13F359 /* SSCalendarMonthlyViewController.xib in Sources */,
+				F409315F16A72ECD38E69257F5E84199 /* SSCalendarUtils.m in Sources */,
+				04F08B7FBA60581F7EB14DBBC3A6A8BE /* SSCalendarWeekHeaderView.m in Sources */,
+				2B75AC5237B2055720B9B6BBC0B2774E /* SSCalendarWeekLayout.m in Sources */,
+				6D705D7F477B40257C802F03CB0C8675 /* SSCalendarWeekViewController.m in Sources */,
+				898C05E3DE704A2A5BB11D93C0D7726E /* SSDataController.m in Sources */,
+				3DEEF4F77861C14FC89AA65B8D226BB8 /* SSDayNode.m in Sources */,
+				A4686145F31CBB8903607DCE98467709 /* SSDimensions.m in Sources */,
+				6D6C7FDE8871B8F0929569A6EB616094 /* SSEvent.m in Sources */,
+				BC335784EAFA100B5DF292A172FFD6F4 /* SSMonthNode.m in Sources */,
+				4B0739321EB4EB4D9FB6D8C2CC133B0D /* SSStyles.m in Sources */,
+				A3BF2E64E5F4955FB7EE4333F71960A7 /* SSYearNode.m in Sources */,
+				39A9A609244FA649828F20E14FEF3E28 /* StellarConversionUtils.m in Sources */,
+				8532B135A30AEE980A83FD3D6EE1D76F /* UIColor+StellarAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF3D376C32DFF05893935E363DD93EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208D284A69C61E39A89492DF9E6C37AC /* CropViewController-dummy.m in Sources */,
+				5DB2CA2B5B1866FE2AEA2E56EB9046A6 /* CropViewController.swift in Sources */,
+				AAF0D03122B364A55DC760BBD61DD819 /* TOActivityCroppedImageProvider.m in Sources */,
+				575979BE9585CB480963FBD3A129CF3B /* TOCropOverlayView.m in Sources */,
+				CF8907C1E99FBBF05F174078595B3F74 /* TOCroppedImageAttributes.m in Sources */,
+				A5A5ABA6388C976E7816AD51AC1A181A /* TOCropScrollView.m in Sources */,
+				2FC4855EE9C23B73BBEE4C11423F8920 /* TOCropToolbar.m in Sources */,
+				D87172DF6F9E25124FAE4FB78C2D3037 /* TOCropView.m in Sources */,
+				7865B3A5AD97F8A1E3518E36C20E422F /* TOCropViewController.m in Sources */,
+				6343978FF28CF2088F19F80F77AD7EF8 /* TOCropViewControllerTransitioning.m in Sources */,
+				AB395E337D7B37B7DDA5F208B58F15AF /* UIImage+CropRotate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9AC3D1F641A794188A5F1CDA663770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDEFAF29E505FC857C4A10BE360B9C85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6392E5D38418F27C2D875638A345C840 /* BarPagerTabStripViewController.swift in Sources */,
+				7F5D7B32443D7117C68FE474EBCE6949 /* BarView.swift in Sources */,
+				FC76344D29FC0A353A894035E2C79131 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
+				64065FE04CF82E9504FAA6E699A47710 /* ButtonBarPagerTabStripViewController.swift in Sources */,
+				882F8EE1DF88AAF5F71C2CE25224E8EF /* ButtonBarView.swift in Sources */,
+				8A2592DAD914721C041FF00BE327BF0A /* ButtonBarViewCell.swift in Sources */,
+				B4E0D14C055E0E82F06A5676C3E0BA89 /* FXPageControl.m in Sources */,
+				0C05D9982CB8548ED2547CFC65474FF4 /* IndicatorInfo.swift in Sources */,
+				31D38D2D31A9D0ED15A5C7A39AD6F969 /* PagerTabStripBehaviour.swift in Sources */,
+				6F4471A44511330D6CED4F6A673218BE /* PagerTabStripError.swift in Sources */,
+				78C7FB154D17161F71A954075A1ACCF9 /* PagerTabStripViewController.swift in Sources */,
+				156209D42012AC63DB15F8E794616891 /* SegmentedPagerTabStripViewController.swift in Sources */,
+				872F0E20EA221E7EDC3E2F050779EDDB /* SwipeDirection.swift in Sources */,
+				FA6683BCBF40A9210A24A90403E47540 /* TwitterPagerTabStripViewController.swift in Sources */,
+				BB461CACBD31A7CB258340E3D3F74845 /* XLPagerTabStrip-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0107BDD36C85CD41A8D8959B09D98490 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CropViewController-TOCropViewControllerBundle";
+			target = F8690E9C865E9F085058559585223B97 /* CropViewController-TOCropViewControllerBundle */;
+			targetProxy = D88E77966AE52F35E4B0CA1DB5D0361C /* PBXContainerItemProxy */;
+		};
+		06D48334909075C511121E7141C8448A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = C8DB81E2CA9E68019BB07E5FB2E02312 /* ReachabilitySwift */;
+			targetProxy = 668B0C5A5DB88680BCCD47A4898EC73B /* PBXContainerItemProxy */;
+		};
+		224B4D44CBB018B0752C4B634DC9F636 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			target = 181981B726BB7BBB8A70D8D82FB87061 /* XLPagerTabStrip-XLPagerTabStrip */;
+			targetProxy = 188A28E79B042F5C9DB97C948D65E9CD /* PBXContainerItemProxy */;
+		};
+		74CC68DBD1844EC594CDF1932391BB83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CropViewController;
+			target = C59B34511F05B57A3858C8B2A04A9D15 /* CropViewController */;
+			targetProxy = 47875DF6D877F734A33F541E26D2A66E /* PBXContainerItemProxy */;
+		};
+		991D018D4ED779E64ECA8C686EFC7FC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XLPagerTabStrip;
+			target = E3319F23E2D445B8B019003D822884FD /* XLPagerTabStrip */;
+			targetProxy = 1DA6D1F91099BC7723A2F0D7B994700C /* PBXContainerItemProxy */;
+		};
+		9EA319A315D8479DAB2F82F8D2022228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SSCalendar-SSCalendar";
+			target = D00396B4322591FABEE1F0002CD058D2 /* SSCalendar-SSCalendar */;
+			targetProxy = 1B73E1EEF3A4075CDE142AD81673B977 /* PBXContainerItemProxy */;
+		};
+		ADA3554A17B15CDC9D15A0E4FCBE0ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSCalendar;
+			target = B4A6B1D8D8E67A8D8F7BC561911E43A3 /* SSCalendar */;
+			targetProxy = 4FE0FF97EBC7C44F62D934244A941C7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D8CD5E2F4130CFE3C73475F419F3991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF876423F97BC372631EC5034ECB92F /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		27708423AD2BD58AC16AAAA579A70F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAF04A9B3C4B97AA94ABCE89884BEE2 /* CropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CropViewController/CropViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CropViewController/CropViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CropViewController/CropViewController.modulemap";
+				PRODUCT_MODULE_NAME = CropViewController;
+				PRODUCT_NAME = CropViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		27A7302649B8C9D18A6D3E3B36119983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F4176F4600958755B3935274D71544 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = ReachabilitySwift;
+				PRODUCT_NAME = ReachabilitySwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45958E82AC7A9CD6C97A1A2628E19790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E734F769A88AAC3B5BFB6507A7A8DC9F /* SSCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSCalendar/SSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSCalendar/SSCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSCalendar/SSCalendar.modulemap";
+				PRODUCT_MODULE_NAME = SSCalendar;
+				PRODUCT_NAME = SSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E56FCFE76F11495BF3C1163269280B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F4176F4600958755B3935274D71544 /* ReachabilitySwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = ReachabilitySwift;
+				PRODUCT_NAME = ReachabilitySwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		583BD36AA820413AE16030EDE7188822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAF04A9B3C4B97AA94ABCE89884BEE2 /* CropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CropViewController";
+				INFOPLIST_FILE = "Target Support Files/CropViewController/ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TOCropViewControllerBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6164E1762B3D7CCAE4C1C3D0F33A603A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E734F769A88AAC3B5BFB6507A7A8DC9F /* SSCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SSCalendar";
+				INFOPLIST_FILE = "Target Support Files/SSCalendar/ResourceBundle-SSCalendar-SSCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6F7D265A1F1D62867CB9A448BEE04148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAF04A9B3C4B97AA94ABCE89884BEE2 /* CropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CropViewController/CropViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CropViewController/CropViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CropViewController/CropViewController.modulemap";
+				PRODUCT_MODULE_NAME = CropViewController;
+				PRODUCT_NAME = CropViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		70A16962E227E6377599344FC11AD724 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF876423F97BC372631EC5034ECB92F /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_MODULE_NAME = XLPagerTabStrip;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7277F4725E554F998190343B03BF0C04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E734F769A88AAC3B5BFB6507A7A8DC9F /* SSCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SSCalendar";
+				INFOPLIST_FILE = "Target Support Files/SSCalendar/ResourceBundle-SSCalendar-SSCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		783B4D49C87862C14465766B596416B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC258015B0019BC3178D2D0DAD71E3F /* Pods-RightManagement.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RightManagement/Pods-RightManagement-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RightManagement/Pods-RightManagement.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A16167477093F5CCAE46C3BC78BF6D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF876423F97BC372631EC5034ECB92F /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_MODULE_NAME = XLPagerTabStrip;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8B6D9C9FE232D990F6F85676C358FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E51562FFEB3B1F18AC5BB014335EC6E /* Pods-RightManagement.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RightManagement/Pods-RightManagement-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RightManagement/Pods-RightManagement.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D48C184AB794B706AEF6927209881DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAF04A9B3C4B97AA94ABCE89884BEE2 /* CropViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CropViewController";
+				INFOPLIST_FILE = "Target Support Files/CropViewController/ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TOCropViewControllerBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D8C2BD4F4CE32C8D71F688374A6377EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF876423F97BC372631EC5034ECB92F /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E2E23CA5255E2A13FACE2F6789BA4B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E734F769A88AAC3B5BFB6507A7A8DC9F /* SSCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSCalendar/SSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSCalendar/SSCalendar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSCalendar/SSCalendar.modulemap";
+				PRODUCT_MODULE_NAME = SSCalendar;
+				PRODUCT_NAME = SSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25A15367B90D15EF50FB5F5017C8EA79 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70A16962E227E6377599344FC11AD724 /* Debug */,
+				A16167477093F5CCAE46C3BC78BF6D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4138B448CC1298A7AC4674B0385CF4C2 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E56FCFE76F11495BF3C1163269280B0 /* Debug */,
+				27A7302649B8C9D18A6D3E3B36119983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77C604C2B9B48950E4FEC583FF0D4964 /* Build configuration list for PBXNativeTarget "SSCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E23CA5255E2A13FACE2F6789BA4B93 /* Debug */,
+				45958E82AC7A9CD6C97A1A2628E19790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86C684D4931D8F8C501CCF58B25FD17D /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C2BD4F4CE32C8D71F688374A6377EA /* Debug */,
+				1D8CD5E2F4130CFE3C73475F419F3991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B2D9F5369074EA0D099B3D59344A650 /* Build configuration list for PBXNativeTarget "Pods-RightManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8B6D9C9FE232D990F6F85676C358FCC /* Debug */,
+				783B4D49C87862C14465766B596416B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F7BDFD601E44DBC381D85E81E74FC1F /* Build configuration list for PBXNativeTarget "SSCalendar-SSCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6164E1762B3D7CCAE4C1C3D0F33A603A /* Debug */,
+				7277F4725E554F998190343B03BF0C04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB64971412431508120DC60C53803AD1 /* Build configuration list for PBXNativeTarget "CropViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27708423AD2BD58AC16AAAA579A70F5C /* Debug */,
+				6F7D265A1F1D62867CB9A448BEE04148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC542EF867BA3247978EAABDF125FC8B /* Build configuration list for PBXNativeTarget "CropViewController-TOCropViewControllerBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583BD36AA820413AE16030EDE7188822 /* Debug */,
+				D48C184AB794B706AEF6927209881DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

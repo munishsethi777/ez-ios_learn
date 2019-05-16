@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "UpdateProfileViewController.updateProfileAction(_:):UpdateProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textField.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ServiceHandler.makeAPICallImage(url:method:chosenImage:completionHandler:):ServiceHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "request">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "_kernelrpc_mach_vm_deallocate_trap:(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UpdateProfileViewController.editingChanged(textField:):UpdateProfileViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "editingTextField.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in UpdateProfileViewController.getUserFields():UpdateProfileViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyAchievements.tableView(_:cellForRowAt:):MyAchievements.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.badgesCount">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UpdateProfileViewController.loadControls(json:):UpdateProfileViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MyAchievements.loadBadges(response:):MyAchievements.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "badgesCount">
+            </PersistentString>
+            <PersistentString
+               value = "self.badgeTableView.contentSize.height">
+            </PersistentString>
+            <PersistentString
+               value = "badges">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UpdateProfileViewController.getUserFields():UpdateProfileViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DashboardVC.loadActiveLearningPlans(response:):DashboardVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.activeLearningPlanCollectionView.collectionViewLayout.collectionViewContentSize.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

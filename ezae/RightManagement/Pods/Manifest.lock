@@ -1,0 +1,28 @@
+PODS:
+  - CropViewController (2.4.0)
+  - ReachabilitySwift (3)
+  - SSCalendar (0.0.3)
+  - XLPagerTabStrip (8.1.0)
+
+DEPENDENCIES:
+  - CropViewController
+  - ReachabilitySwift (~> 3)
+  - SSCalendar
+  - XLPagerTabStrip (~> 8.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CropViewController
+    - ReachabilitySwift
+    - SSCalendar
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  CropViewController: a090820b15fc3da68e694d7c192a4708c576828b
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SSCalendar: 65498d7ec6ff38b4aead38d3cf8bb317666a2fe4
+  XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
+
+PODFILE CHECKSUM: 180dade06ea07ef7024e808fd19cfc73aac12458
+
+COCOAPODS: 1.6.1

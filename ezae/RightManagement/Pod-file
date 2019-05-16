@@ -1,0 +1,8 @@
+use_frameworks!
+
+target 'RightManagement' do
+pod 'SSCalendar'
+pod 'ReachabilitySwift', '~> 3'
+pod 'CropViewController'
+pod 'XLPagerTabStrip', '~> 9.0'
+end
