@@ -13,14 +13,14 @@ class TrainingTableViewCell: UITableViewCell {
         // Initialization code
     }
    
-    @IBOutlet weak var launchImageButton: UIButton!
+    @IBOutlet weak var launchImageButton: PassableUIButton!
     
     @IBOutlet weak var baseView: bottomView!
     
     @IBOutlet weak var pointsCaptionLabel: UILabel!
     @IBOutlet weak var scoreCaptionLabel: UILabel!
     @IBOutlet weak var leaderboardLabel: UILabel!
-    @IBOutlet weak var launchModuleButton: UIButton!
+    @IBOutlet weak var launchModuleButton: PassableUIButton!
    
    
     

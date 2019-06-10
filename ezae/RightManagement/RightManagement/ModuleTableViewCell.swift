@@ -8,7 +8,7 @@
 
 import UIKit
 class ModuleTableViewCell : UITableViewCell{
-    @IBOutlet weak var lauchModuleButton: UIButton!
+    @IBOutlet weak var lauchModuleButton: PassableUIButton!
   
     @IBOutlet weak var baseView: bottomView!
     @IBOutlet weak var pointsCaptionLabel: UILabel!
@@ -19,9 +19,11 @@ class ModuleTableViewCell : UITableViewCell{
    
     @IBOutlet weak var moduleImageView: UIImageView!
     
-    @IBOutlet weak var launchModuleImageButton: UIButton!
+    @IBOutlet weak var launchModuleImageButton: PassableUIButton!
     
 
     @IBOutlet weak var moduleDesLabel: UILabel!
     @IBOutlet weak var moduleTitleLabel: UILabel!
 }
+
+

@@ -220,11 +220,12 @@ class TrainingViewController: UIViewController,UITableViewDataSource,UITableView
         }
         cell?.launchModuleButton.setTitle(buttonTitle, for: .normal)
         cell?.launchModuleButton.tag = seq
-    
+        cell?.launchModuleButton.params["isReattempted"] = reattempted > 0
         cell?.launchModuleButton.addTarget(self, action:#selector(launchModule), for: .touchUpInside)
         
         cell?.launchImageButton.tag = seq
         cell?.launchImageButton.titleLabel?.tag = lpSeq
+        cell?.launchImageButton.params["isReattempted"] = reattempted > 0
         cell?.launchImageButton.addTarget(self, action:#selector(launchModule), for: .touchUpInside)
        
         cell?.scoreLabel.isHidden = true
@@ -292,7 +293,7 @@ class TrainingViewController: UIViewController,UITableViewDataSource,UITableView
         return sectionHeader
     }
     
-    @objc func launchModule(sender:UIButton){
+    @objc func launchModule(sender:PassableUIButton){
 //        selectedModuleSeq = sender.tag
 //        selectedLpSeq = (sender.titleLabel?.tag)!
 //        self.performSegue(withIdentifier: "LaunchModuleController", sender: nil)
@@ -300,8 +301,9 @@ class TrainingViewController: UIViewController,UITableViewDataSource,UITableView
         let launchModuleVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LaunchModule") as! LaunchModuleViewController
         launchModuleVC.moduleSeq = sender.tag
         launchModuleVC.lpSeq = (sender.titleLabel?.tag)!
-        if(isReattempted){
-            let reattemptedAlert = UIAlertController(title: "Re-attempted", message: "Do you really want to re-attempt this Training?", preferredStyle: UIAlertControllerStyle.alert)
+        let reattempted = sender.params["isReattempted"] as! Bool
+        if(reattempted){
+            let reattemptedAlert = UIAlertController(title: "Re-attempt", message: "Do you really want to re-attempt this Training?", preferredStyle: UIAlertControllerStyle.alert)
             reattemptedAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
                 launchModuleVC.isReattempt = self.isReattempted
                 self.present(launchModuleVC, animated: true, completion: nil)
