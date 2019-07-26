@@ -81,18 +81,7 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
                             DispatchQueue.main.async {
                                 let img = UIImage(data: data as Data)
                                 self.questionImageView.image = img
-                                let myImageWidth = self.questionImageView.image!.size.width
-                                let myImageHeight = self.questionImageView.image!.size.height
-                                let myViewWidth = self.questionImageView.frame.size.width
-                                let ratio = myViewWidth/myImageWidth
-                                let scaledHeight = myImageHeight * ratio
-                                    NSLayoutConstraint(item: self.questionImageView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: scaledHeight).isActive = true
-                                self.questionImageView.frame = CGRect(x:self.questionImageView.frame.origin.x, y: self.questionImageView.frame.origin.y, width:myViewWidth, height:scaledHeight)
-                                let controlViewHeight = self.controlView.frame.size.height
-                                if(controlViewHeight > 0){
-                                    self.scrolView.contentSize = self.calculateContentSize(scrollView: self.scrolView,height:scaledHeight)
-                                }
-                              
+                                self.setScrollViewHeight();
                             }
                         }
                     }
@@ -100,7 +89,6 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
             }
             options = questionJson["answers"] as! [Any];
             seqOptions = options
-            
             moduleProgress = questionJson["progress"] as! [Any]
             let showFeedback = moduleJson["isshowfeedback"] as! String
             isShowFeedback =  Int(showFeedback)! > 0
@@ -141,13 +129,32 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         if(!moduleProgress.isEmpty){
             handleViews()
         }
-        let scrollViewHeight  = UIScreen.main.bounds.height - quesTitle.frame.size.height - footerView.frame.size.height - 50
+        let scrollViewHeight  = UIScreen.main.bounds.height - quesTitle.frame.size.height - footerView.frame.size.height - 30
         scrolView.frame.size = CGSize(width: self.view.frame.width, height: scrollViewHeight)
         NSLayoutConstraint(item: scrolView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: scrollViewHeight).isActive = true
         
-        //scrolView.contentSize = calculateContentSize(scrollView: scrolView)
     }
     
+    private func setScrollViewHeight(){
+        if(self.questionImageView.image != nil){
+            let myImageWidth = self.questionImageView.image!.size.width
+            let myImageHeight = self.questionImageView.image!.size.height
+            let myViewWidth = self.questionImageView.frame.size.width
+            let ratio = myViewWidth/myImageWidth
+            let scaledHeight = myImageHeight * ratio
+            NSLayoutConstraint(item: self.questionImageView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: scaledHeight).isActive = true
+            self.questionImageView.frame = CGRect(x:self.questionImageView.frame.origin.x, y: self.questionImageView.frame.origin.y, width:myViewWidth, height:scaledHeight)
+        }
+        let controlViewHeight = self.controlView.frame.size.height
+        if(controlViewHeight > 0){
+            self.scrolView.contentSize = self.calculateContentSize(scrollView: self.scrolView)
+            
+        }
+        self.scrolView.flashScrollIndicators()
+        let bottomOffset = CGPoint(x: 0, y: self.scrolView.contentSize.height - self.scrolView.bounds.size.height)
+        self.scrolView.setContentOffset(bottomOffset, animated: true)
+    }
+  
     func handleWithExistingProgress(){
         let questionSeq = Int(questionJson["seq"] as! String)!
         let moduleSeq = Int(questionJson["moduleSeq"] as! String)!
@@ -157,25 +164,10 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         handleViews()
     }
     
-//    func calculateContentSize(scrollView: UIScrollView) -> CGSize {
-//        var viewHeight = CGFloat()
-//        for subview in controlView.subviews {
-//            viewHeight = viewHeight + subview.frame.size.height
-//        }
-//        let contentHeight = self.questionImageView.frame.size.height + controlView.frame.size.height
-//        return CGSize(width: scrollView.frame.size.width, height: contentHeight)
-//    }
-    
-    func calculateContentSize(scrollView: UIScrollView,height:CGFloat) -> CGSize {
-//        var topPoint = CGFloat()
-//        var height = CGFloat()
-//
-//        for subview in scrollView.subviews {
-//            height += subview.frame.size.height
-//        }
-        var controlViewHeight = self.controlView.frame.size.height
-        var imageViewHeight = self.questionImageView.frame.size.height
-        return CGSize(width: scrollView.frame.size.width, height:  controlViewHeight + height + 50)
+    func calculateContentSize(scrollView: UIScrollView) -> CGSize {
+        let controlViewHeight = self.controlView.frame.size.height
+        let imageViewHeight = self.questionImageView.frame.size.height
+        return CGSize(width: scrollView.frame.size.width, height:  controlViewHeight + imageViewHeight + 50)
     }
     
     @IBAction func clickOnButton(_ sender: Any) {
@@ -183,14 +175,10 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
     }
     
     @IBAction func backTapped(_ sender: Any) {
-        self.dismiss(animated: true, completion: { () -> Void in
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refreshController"), object: nil)
-        })
+        goToPreviousPage();
     }
     private func goToNextPage(){
         if(isLastPage()){
-            //self.performSegue(withIdentifier: "showTrainingTabs", sender: self)
-            //dismiss(animated: true, completion: nil)
             self.dismiss(animated: true, completion: { () -> Void in
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refreshController"), object: nil)
             })
@@ -199,8 +187,27 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         }
     }
     
+    private func goToPreviousPage(){
+        if(isFirstPage()){
+            self.dismiss(animated: true, completion: { () -> Void in
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refreshController"), object: nil)
+            })
+        }else{
+            parentController.goPreviousPage(index:itemIndex+1)
+        }
+    }
+    
     private func isLastPage()->Bool{
         return itemIndex+1 == totalQuestion
+    }
+    private func isFirstPage()->Bool{
+        return itemIndex == 0
+    }
+    
+    private func setControlViewHeight(height:CGFloat){
+        controlView.frame.size = CGSize(width: controlView.frame.width, height: height + 20)
+        NSLayoutConstraint(item: self.controlView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: height + 20).isActive = true
+        self.setScrollViewHeight()
     }
     
     func addRadioViews(){
@@ -238,11 +245,12 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
             radioButtonController?.delegate = self
             radioButtonController?.shouldLetDeSelect = true
         }
-        NSLayoutConstraint(item: self.controlView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: y + 20).isActive = true
+        setControlViewHeight(height: y);
         if(!moduleProgress.isEmpty){
             getScoreForSelectedOption()
         }
     }
+    
     func addCheckboxViews(){
         var y:CGFloat = 0
         var button: CheckBox!
@@ -271,7 +279,7 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
            // view.addSubview(button)
             controlView.addSubview(button);
         }
-        NSLayoutConstraint(item: self.controlView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: y + 20).isActive = true
+        setControlViewHeight(height: y)
         if(!moduleProgress.isEmpty){
             getScoreForSelectedOption()
         }
@@ -279,31 +287,33 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
     
     func addTextView(){
         var answerText:String = ""
+        let height:CGFloat = getScreenSize()
         if(!moduleProgress.isEmpty){
             let existingProgress = moduleProgress[0] as? [String: Any]
             answerText = (existingProgress?["answerText"] as? String)!
             feedback_success_arr.append(StringConstants.SUBMITTED_SUCCESSFULLY)
         }
-        let y:CGFloat = quesTitle.frame.height
+        let y:CGFloat = quesTitle.frame.height + 5
         longQuestionTextView = UITextView.init()
-        longQuestionTextView.frame = CGRect(x:20,y:y,width:self.view.frame.width-40,height:128)
+        longQuestionTextView.frame = CGRect(x:5,y:y,width:self.view.frame.width - 10,height:height-10)
         longQuestionTextView.textAlignment = NSTextAlignment.justified
         let borderColor = UIColor.lightGray
         longQuestionTextView.layer.borderColor = borderColor.cgColor
         longQuestionTextView.layer.borderWidth = 1.0
         longQuestionTextView.text = answerText
        // view.addSubview(longQuestionTextView)
-        scrolView.addSubview(longQuestionTextView);
+        controlView.addSubview(longQuestionTextView);
         if(!moduleProgress.isEmpty){
             getScoreForSelectedOption()
         }
+        setControlViewHeight(height: height);
     }
    
     private var tableView: UITableView!
     func addTableView(){
         let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
         let displayWidth: CGFloat = self.view.frame.width
-        var height: CGFloat = CGFloat(options.count) * 40.00
+        let height: CGFloat = CGFloat(options.count) * 40.00
         let y:CGFloat = quesTitle.frame.height
         tableView = UITableView(frame: CGRect(x: 0, y: y, width: displayWidth, height: height))
         tableView.rowHeight = 40
@@ -311,8 +321,9 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         tableView.delegate = self
         tableView.setEditing(true, animated: true)
         //view.addSubview(tableView)
-        scrolView.addSubview(tableView);
+        controlView.addSubview(tableView);
         seqOptions = options
+        seqOptions = seqOptions.shuffled()
         if(!moduleProgress.isEmpty){
             var savedOptions:[Any] = []
              for i in 0..<moduleProgress.count{
@@ -328,6 +339,7 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
             }
             seqOptions = savedOptions;
         }
+        setControlViewHeight(height: height)
     }
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
@@ -364,9 +376,10 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
     }
     
     func addSwitchView(){
+        let height:CGFloat = 128
         let y:CGFloat = quesTitle.frame.height + 20
         switcher = UISwitch.init()
-        switcher.frame = CGRect(x:30,y:y,width:300,height:128)
+        switcher.frame = CGRect(x:30,y:y,width:300,height:height)
         changeSwitcher(sender: switcher)
         if(!moduleProgress.isEmpty){
             let existingProgress = moduleProgress[0] as? [String: Any]
@@ -385,10 +398,11 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         }
         switcher.addTarget(self, action:#selector(changeSwitcher), for: .valueChanged)
        // view.addSubview(switcher)
-        scrolView.addSubview(switcher);
+        controlView.addSubview(switcher);
         if(!moduleProgress.isEmpty){
             getScoreForSelectedOption()
         }
+        setControlViewHeight(height: height);
     }
     
     @objc func changeSwitcher(sender: UISwitch){
@@ -402,14 +416,22 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         selectedAnsSeqs.append(Int(seq)!)
     }
     
+    private func getScreenSize()->CGFloat{
+        return UIScreen.main.bounds.height - quesTitle.frame.size.height - footerView.frame.size.height
+    }
+    
     func addWebView(){
         let y:CGFloat = quesTitle.frame.height
         let webView: UIWebView = UIWebView.init()
-        webView.frame = CGRect(x:16,y:y,width:350,height:300)
+        let height:CGFloat = getScreenSize()
+        webView.frame = CGRect(x:0,y:y,width:UIScreen.main.bounds.width,height:height - 10)
         let questionDetail = questionJson["detail"] as! String
         webView.loadHTMLString(questionDetail, baseURL: nil)
         //view.addSubview(webView)
-        scrolView.addSubview(webView);
+        controlView.addSubview(webView);
+        setControlViewHeight(height: height)
+        //self.scrolView.contentSize = CGSize(width: scrolView.frame.size.width, height: height)
+       // self.setScrollViewHeight();
     }
     
     func addElearningWebView(){
@@ -458,7 +480,8 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
     func addWebViewForVideo(){
         let y:CGFloat = quesTitle.frame.height
         let webView: UIWebView = UIWebView.init()
-        webView.frame = CGRect(x:0,y:y,width:view.frame.width,height:350)
+        let height:CGFloat = getScreenSize()
+        webView.frame = CGRect(x:0,y:y,width:view.frame.width,height:height - 10)
         let questionDetail = questionJson["detail"] as! String
         var str = questionDetail.trimmingCharacters(in: .whitespacesAndNewlines)
         if(str.hasPrefix("<iframe")){
@@ -468,7 +491,9 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         }
         webView.loadHTMLString(str, baseURL: nil)
         //view.addSubview(webView)
-        scrolView.addSubview(webView);
+        controlView.addSubview(webView);
+       // self.scrolView.contentSize = CGSize(width: scrolView.frame.size.width, height: height)
+        setControlViewHeight(height: height)
     }
     
     
@@ -478,20 +503,22 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         height = height - quesTitle.frame.height
         height = height - 80
         
-        let webView = UIWebView(frame: CGRect(x:0,y:y,width:view.frame.width,height:height))
+        let webView = UIWebView(frame: CGRect(x:0,y:y,width:view.frame.width,height:height-10))
         webView.scalesPageToFit = true
         webView.contentMode = UIViewContentMode.scaleAspectFit
         //view.addSubview(webView)
-        scrolView.addSubview(webView);
+        controlView.addSubview(webView);
         let questionDetail = questionJson["detail"] as! String
         let urlS = StringConstants.DOC_URL + questionDetail
         //urlS = urlS.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         let url = URL(string: urlS)
         let request = URLRequest(url: url!)
         webView.loadRequest(request)
+        setControlViewHeight(height: height)
     }
     
     func addSliderView(){
+        let height:CGFloat = 80
         let slider = UISlider(frame: CGRect(x:10,y:quesTitle.frame.height,width:self.view.frame.width-20,height:80))
         sliderLabel = UILabel.init()
         sliderLabel.text = "0 %"
@@ -503,7 +530,7 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         slider.minimumValue = 0
         slider.maximumValue = 100
         // view.addSubview(sliderLabel)
-        scrolView.addSubview(sliderLabel);
+        controlView.addSubview(sliderLabel);
         if(!moduleProgress.isEmpty){
             let existingProgress = moduleProgress[0] as? [String: Any]
             var answerText = (existingProgress?["answerText"] as? String)!
@@ -512,6 +539,7 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
             feedback_success_arr.append(StringConstants.SUBMITTED_SUCCESSFULLY)
         }
         slider.addTarget(self, action:#selector(sliderValueChanged), for: .valueChanged)
+        setControlViewHeight(height: height)
     }
     
     @objc func addSelectedAnsSeq(sender: UIButton){
@@ -583,7 +611,7 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
             executeSubmitModuleCall()
         }
         if(!isTimeUp){
-            parentController.createPageViewController(itemIndex: itemIndex)
+           //parentController.createPageViewController(itemIndex: itemIndex)
         }
          parentController.submittedQuestionCount =  parentController.submittedQuestionCount + 1
         if(!isShowFeedback && !isTimeUp){

@@ -317,6 +317,15 @@ class LaunchModuleViewController: UIViewController,UIPageViewControllerDelegate,
             UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
         setPaggerLabel(page: index+1)
     }
+    
+    func goPreviousPage(index:Int) {
+        let viewController = self.pageViewController?.viewControllers
+        let previousViewController =  self.pageViewController?.dataSource?.pageViewController( self.pageViewController!, viewControllerBefore: viewController![0] )
+        self.pageViewController?.setViewControllers([previousViewController!], direction:
+            UIPageViewControllerNavigationDirection.reverse, animated: true, completion: nil)
+        setPaggerLabel(page: index-1)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if (segue.identifier == "showMainTabs") {
             //get a reference to the destination view controller

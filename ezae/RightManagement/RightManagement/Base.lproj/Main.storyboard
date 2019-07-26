@@ -1656,9 +1656,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtD-wp-Tkb">
                                 <rect key="frame" x="16" y="20" width="343" height="0.0"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="es9-zE-Mqf"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1743,7 +1740,6 @@
                             <constraint firstItem="Xrf-yc-Rog" firstAttribute="width" secondItem="2I9-hB-WJz" secondAttribute="width" id="Kdm-dQ-g33"/>
                             <constraint firstItem="3r6-UR-I3h" firstAttribute="width" secondItem="2I9-hB-WJz" secondAttribute="width" id="OyU-1c-UAl"/>
                             <constraint firstItem="td5-xJ-Zia" firstAttribute="top" secondItem="Xrf-yc-Rog" secondAttribute="bottom" id="VDG-eB-2eN"/>
-                            <constraint firstItem="NtD-wp-Tkb" firstAttribute="top" secondItem="NVn-OT-Nd9" secondAttribute="bottom" id="YjQ-ac-VY3"/>
                             <constraint firstItem="NtD-wp-Tkb" firstAttribute="leading" secondItem="2I9-hB-WJz" secondAttribute="leading" constant="16" id="fp7-sS-wF3"/>
                             <constraint firstItem="3r6-UR-I3h" firstAttribute="top" secondItem="NtD-wp-Tkb" secondAttribute="bottom" id="xfB-uH-mjt"/>
                         </constraints>
