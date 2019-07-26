@@ -152,7 +152,8 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         }
         self.scrolView.flashScrollIndicators()
         let bottomOffset = CGPoint(x: 0, y: self.scrolView.contentSize.height - self.scrolView.bounds.size.height)
-        self.scrolView.setContentOffset(bottomOffset, animated: true)
+        //self.scrolView.setContentOffset(bottomOffset, animated: true)
+        scrolView.setContentOffset(CGPoint(x: 0, y: self.questionImageView.frame.height - 50), animated: true)
     }
   
     func handleWithExistingProgress(){
@@ -529,7 +530,7 @@ class PageItemController: UIViewController, SSRadioButtonControllerDelegate,UITa
         scrolView.addSubview(slider);
         slider.minimumValue = 0
         slider.maximumValue = 100
-        // view.addSubview(sliderLabel)
+        //view.addSubview(sliderLabel)
         controlView.addSubview(sliderLabel);
         if(!moduleProgress.isEmpty){
             let existingProgress = moduleProgress[0] as? [String: Any]
