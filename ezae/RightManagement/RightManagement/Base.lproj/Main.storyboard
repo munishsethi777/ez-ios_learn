@@ -1669,7 +1669,7 @@
                                     </imageView>
                                     <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="COx-8L-InX" userLabel="ControlView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="518"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1732,6 +1732,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="top" secondItem="NtD-wp-Tkb" secondAttribute="top" constant="-20" id="1pC-8M-URC"/>
                             <constraint firstItem="NtD-wp-Tkb" firstAttribute="top" secondItem="NVn-OT-Nd9" secondAttribute="bottom" id="5Bl-Sn-iTB"/>
@@ -6793,4 +6794,3 @@ AgEAAAAAAAAAQQAAAAAAAAAAAAAAAAAAF5w
         <segue reference="26S-pN-GFy"/>
     </inferredMetricsTieBreakers>
 </document>
-
