@@ -71,6 +71,11 @@ class UpdateProfileViewController:UIViewController,UIImagePickerControllerDelega
         alert.addAction(gallaryAction)
         alert.addAction(cameraAction)
         alert.addAction(cancelAction)
+        if let popoverPresentationController = alert.popoverPresentationController {
+            popoverPresentationController.permittedArrowDirections = .down
+            popoverPresentationController.sourceView = self.view
+            popoverPresentationController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+        }
         self.present(alert, animated: true, completion: nil)
     }
     func tapGesture(gesture: UIGestureRecognizer) {
